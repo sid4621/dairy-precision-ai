@@ -694,6 +694,20 @@ async def ai_smart_inference(data: SmartInferenceInput):
 # ----------------------------------------
 # PHASE 13: Milk Yield Optimization (XGBoost Regressor)
 # ----------------------------------------
+# 8. PREDICT MILK YIELD
+# ----------------------------------------
+
+class YieldInput(BaseModel):
+    age_months: float
+    weight_kg: float
+    parity: int
+    days_in_milk: int
+    feed_quantity: float
+    feeding_frequency: int
+    water_intake: float
+    prev_week_avg: float
+    temp: float
+    humidity: float
 
 yield_model_cache = None
 yield_features_cache = None
