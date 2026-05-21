@@ -1,0 +1,318 @@
+{
+    "distribution": [
+        {
+            "name": "Healthy",
+            "count": 137419
+        },
+        {
+            "name": "Mange",
+            "count": 2687
+        },
+        {
+            "name": "Dystocia",
+            "count": 2659
+        },
+        {
+            "name": "Malignant_Catarrhal_Fever",
+            "count": 2643
+        },
+        {
+            "name": "Vitamin_Deficiency",
+            "count": 2641
+        },
+        {
+            "name": "Laminitis",
+            "count": 2641
+        },
+        {
+            "name": "Retained_Placenta",
+            "count": 2626
+        },
+        {
+            "name": "Pneumonia",
+            "count": 2614
+        },
+        {
+            "name": "Johnes_Disease",
+            "count": 2605
+        },
+        {
+            "name": "Mineral_Deficiency",
+            "count": 2603
+        },
+        {
+            "name": "Protein_Deficiency",
+            "count": 2600
+        },
+        {
+            "name": "Foot_and_Mouth",
+            "count": 2593
+        },
+        {
+            "name": "Bovine_Respiratory_Disease",
+            "count": 2590
+        },
+        {
+            "name": "Acidosis",
+            "count": 2590
+        },
+        {
+            "name": "Anthrax",
+            "count": 2584
+        },
+        {
+            "name": "Other Illnesses (29 Types)",
+            "count": 75905
+        }
+    ],
+    "vitals": [
+        {
+            "disease": "Dystocia",
+            "Temperature": 38.53,
+            "HeartRate": 65.2
+        },
+        {
+            "disease": "Johnes Disease",
+            "Temperature": 38.49,
+            "HeartRate": 65.1
+        },
+        {
+            "disease": "Laminitis",
+            "Temperature": 38.48,
+            "HeartRate": 65.2
+        },
+        {
+            "disease": "Malignant Catarrhal Fever",
+            "Temperature": 38.48,
+            "HeartRate": 65.1
+        },
+        {
+            "disease": "Mange",
+            "Temperature": 38.46,
+            "HeartRate": 64.6
+        },
+        {
+            "disease": "Mineral Deficiency",
+            "Temperature": 38.52,
+            "HeartRate": 65.5
+        },
+        {
+            "disease": "Pneumonia",
+            "Temperature": 38.49,
+            "HeartRate": 65.1
+        },
+        {
+            "disease": "Protein Deficiency",
+            "Temperature": 38.49,
+            "HeartRate": 65.0
+        },
+        {
+            "disease": "Retained Placenta",
+            "Temperature": 38.47,
+            "HeartRate": 65.6
+        },
+        {
+            "disease": "Vitamin Deficiency",
+            "Temperature": 38.49,
+            "HeartRate": 65.0
+        }
+    ],
+    "environment": [
+        {
+            "Climate": "Arid",
+            "Autumn": 45.3,
+            "Monsoon": 44.6,
+            "Spring": 45.8,
+            "Summer": 45.7,
+            "Winter": 45.7
+        },
+        {
+            "Climate": "Continental",
+            "Autumn": 45.4,
+            "Monsoon": 45.1,
+            "Spring": 45.7,
+            "Summer": 44.6,
+            "Winter": 45.1
+        },
+        {
+            "Climate": "Mediterranean",
+            "Autumn": 43.5,
+            "Monsoon": 44.8,
+            "Spring": 45.1,
+            "Summer": 45.1,
+            "Winter": 44.9
+        },
+        {
+            "Climate": "Subtropical",
+            "Autumn": 45.1,
+            "Monsoon": 44.4,
+            "Spring": 44.9,
+            "Summer": 44.9,
+            "Winter": 45.1
+        },
+        {
+            "Climate": "Temperate",
+            "Autumn": 45.0,
+            "Monsoon": 45.2,
+            "Spring": 44.8,
+            "Summer": 45.0,
+            "Winter": 45.1
+        },
+        {
+            "Climate": "Tropical",
+            "Autumn": 45.4,
+            "Monsoon": 45.5,
+            "Spring": 44.6,
+            "Summer": 44.9,
+            "Winter": 44.7
+        }
+    ],
+    "nutrition": [
+        {
+            "feed": "Concentrates",
+            "Disease Rate": 44.8
+        },
+        {
+            "feed": "Crop Residues",
+            "Disease Rate": 44.8
+        },
+        {
+            "feed": "Dry Fodder",
+            "Disease Rate": 45.5
+        },
+        {
+            "feed": "Green Fodder",
+            "Disease Rate": 45.1
+        },
+        {
+            "feed": "Hay",
+            "Disease Rate": 45.1
+        },
+        {
+            "feed": "Mixed Feed",
+            "Disease Rate": 44.9
+        },
+        {
+            "feed": "Pasture Grass",
+            "Disease Rate": 45.2
+        },
+        {
+            "feed": "Silage",
+            "Disease Rate": 44.9
+        }
+    ],
+    "vaccination": [
+        {
+            "status": "Unvaccinated",
+            "FMD Infection Rate": 1.08
+        },
+        {
+            "status": "Vaccinated",
+            "FMD Infection Rate": 1.01
+        }
+    ],
+    "activity": [
+        {
+            "status": "Sick / Infected",
+            "Walking (km)": 4.0,
+            "Resting (hrs)": 10.1
+        },
+        {
+            "status": "Healthy",
+            "Walking (km)": 4.0,
+            "Resting (hrs)": 10.1
+        }
+    ],
+    "correlation": [
+        {
+            "feature": "Age Months",
+            "correlation": 0.003,
+            "abs_corr": 0.003,
+            "z_size": 0.6
+        },
+        {
+            "feature": "Ambient Temperature C",
+            "correlation": 0.002,
+            "abs_corr": 0.002,
+            "z_size": 0.4
+        },
+        {
+            "feature": "Rumination Time hrs",
+            "correlation": 0.002,
+            "abs_corr": 0.002,
+            "z_size": 0.4
+        },
+        {
+            "feature": "Resting Hours",
+            "correlation": 0.002,
+            "abs_corr": 0.002,
+            "z_size": 0.3
+        },
+        {
+            "feature": "Heart Rate bpm",
+            "correlation": 0.001,
+            "abs_corr": 0.001,
+            "z_size": 0.2
+        },
+        {
+            "feature": "IBR Vaccine",
+            "correlation": 0.001,
+            "abs_corr": 0.001,
+            "z_size": 0.2
+        },
+        {
+            "feature": "Body Condition Score",
+            "correlation": 0.001,
+            "abs_corr": 0.001,
+            "z_size": 0.1
+        },
+        {
+            "feature": "Housing Score",
+            "correlation": 0.0,
+            "abs_corr": 0.0,
+            "z_size": 0.1
+        },
+        {
+            "feature": "Grazing Duration hrs",
+            "correlation": 0.0,
+            "abs_corr": 0.0,
+            "z_size": 0.1
+        },
+        {
+            "feature": "FMD Vaccine",
+            "correlation": 0.0,
+            "abs_corr": 0.0,
+            "z_size": 0.1
+        },
+        {
+            "feature": "BVD Vaccine",
+            "correlation": 0.0,
+            "abs_corr": 0.0,
+            "z_size": 0.1
+        },
+        {
+            "feature": "Walking Distance km",
+            "correlation": 0.0,
+            "abs_corr": 0.0,
+            "z_size": 0.0
+        },
+        {
+            "feature": "Respiratory Rate",
+            "correlation": 0.0,
+            "abs_corr": 0.0,
+            "z_size": 0.0
+        },
+        {
+            "feature": "Humidity percent",
+            "correlation": 0.0,
+            "abs_corr": 0.0,
+            "z_size": 0.0
+        },
+        {
+            "feature": "Milking Interval hrs",
+            "correlation": 0.0,
+            "abs_corr": 0.0,
+            "z_size": 0.0
+        }
+    ]
+}

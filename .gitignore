@@ -1,0 +1,23 @@
+# Environments
+venv/
+env/
+.env
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+dashboard/node_modules/
+package-lock.json
+dist/
+build/
+.npm/
+
+# IDEs and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Any remaining backups
+backup_data/

@@ -1,0 +1,2576 @@
+{
+    "attrition_funnel": [
+        {
+            "name": "Lactation 1",
+            "count": 680
+        },
+        {
+            "name": "Lactation 2",
+            "count": 604
+        },
+        {
+            "name": "Lactation 3",
+            "count": 596
+        },
+        {
+            "name": "Lactation 4",
+            "count": 319
+        }
+    ],
+    "lifecycle": [
+        {
+            "name": "Lactation 1",
+            "Days_to_Peak": 85.2,
+            "Peak_Yield": 32.5,
+            "Dry_Days": 51.3
+        },
+        {
+            "name": "Lactation 2",
+            "Days_to_Peak": 58.4,
+            "Peak_Yield": 40.7,
+            "Dry_Days": 65.0
+        },
+        {
+            "name": "Lactation 3",
+            "Days_to_Peak": 61.8,
+            "Peak_Yield": 43.5,
+            "Dry_Days": 64.9
+        },
+        {
+            "name": "Lactation 4",
+            "Days_to_Peak": 66.2,
+            "Peak_Yield": 43.7,
+            "Dry_Days": 65.6
+        }
+    ],
+    "distribution": [
+        {
+            "range": "3000-3526",
+            "count": 0
+        },
+        {
+            "range": "3526-4052",
+            "count": 0
+        },
+        {
+            "range": "4052-4578",
+            "count": 0
+        },
+        {
+            "range": "4578-5105",
+            "count": 16
+        },
+        {
+            "range": "5105-5631",
+            "count": 49
+        },
+        {
+            "range": "5631-6157",
+            "count": 71
+        },
+        {
+            "range": "6157-6684",
+            "count": 129
+        },
+        {
+            "range": "6684-7210",
+            "count": 205
+        },
+        {
+            "range": "7210-7736",
+            "count": 253
+        },
+        {
+            "range": "7736-8263",
+            "count": 277
+        },
+        {
+            "range": "8263-8789",
+            "count": 265
+        },
+        {
+            "range": "8789-9315",
+            "count": 243
+        },
+        {
+            "range": "9315-9842",
+            "count": 187
+        },
+        {
+            "range": "9842-10368",
+            "count": 163
+        },
+        {
+            "range": "10368-10894",
+            "count": 109
+        },
+        {
+            "range": "10894-11421",
+            "count": 79
+        },
+        {
+            "range": "11421-11947",
+            "count": 63
+        },
+        {
+            "range": "11947-12473",
+            "count": 26
+        },
+        {
+            "range": "12473-13000",
+            "count": 18
+        }
+    ],
+    "cohorts": {
+        "survival": {
+            "Total_Unique": 1056,
+            "L1_Count": 680,
+            "L2_Count": 399,
+            "L2_Pct": 58.7,
+            "L3_Count": 245,
+            "L3_Pct": 36.0,
+            "L4_Count": 75,
+            "L4_Pct": 11.0
+        },
+        "graph": [
+            {
+                "name": "Lactation 1",
+                "Cohort_2": 7698.5,
+                "Cohort_3": 8271.0,
+                "Elite_75": 7758.8
+            },
+            {
+                "name": "Lactation 2",
+                "Cohort_2": 8565.4,
+                "Cohort_3": 8214.7,
+                "Elite_75": 8488.8
+            },
+            {
+                "name": "Lactation 3",
+                "Cohort_3": 9452.5,
+                "Elite_75": 8355.8
+            },
+            {
+                "name": "Lactation 4",
+                "Elite_75": 9408.9,
+                "L5_Prediction": 9408.9,
+                "L5_Bounds": [
+                    9408.9,
+                    9408.9
+                ]
+            },
+            {
+                "name": "Lactation 5 (AI)",
+                "L5_Prediction": 10111.3,
+                "L5_Bounds": [
+                    9653.1,
+                    10569.5
+                ]
+            }
+        ]
+    },
+    "dry_period": [
+        {
+            "Days_Dry": 105,
+            "Yield": 6569.0
+        },
+        {
+            "Days_Dry": 50,
+            "Yield": 6705.1
+        },
+        {
+            "Days_Dry": 51,
+            "Yield": 7853.0
+        },
+        {
+            "Days_Dry": 71,
+            "Yield": 9465.4
+        },
+        {
+            "Days_Dry": 48,
+            "Yield": 9572.8
+        },
+        {
+            "Days_Dry": 58,
+            "Yield": 7477.0
+        },
+        {
+            "Days_Dry": 43,
+            "Yield": 6302.8
+        },
+        {
+            "Days_Dry": 56,
+            "Yield": 9425.7
+        },
+        {
+            "Days_Dry": 68,
+            "Yield": 6474.6
+        },
+        {
+            "Days_Dry": 52,
+            "Yield": 7935.0
+        },
+        {
+            "Days_Dry": 93,
+            "Yield": 9938.5
+        },
+        {
+            "Days_Dry": 43,
+            "Yield": 8088.2
+        },
+        {
+            "Days_Dry": 51,
+            "Yield": 7428.6
+        },
+        {
+            "Days_Dry": 53,
+            "Yield": 7639.7
+        },
+        {
+            "Days_Dry": 50,
+            "Yield": 8450.5
+        },
+        {
+            "Days_Dry": 107,
+            "Yield": 9085.6
+        },
+        {
+            "Days_Dry": 46,
+            "Yield": 6832.0
+        },
+        {
+            "Days_Dry": 49,
+            "Yield": 9798.3
+        },
+        {
+            "Days_Dry": 56,
+            "Yield": 10499.3
+        },
+        {
+            "Days_Dry": 101,
+            "Yield": 7421.7
+        },
+        {
+            "Days_Dry": 56,
+            "Yield": 9133.1
+        },
+        {
+            "Days_Dry": 64,
+            "Yield": 8365.0
+        },
+        {
+            "Days_Dry": 92,
+            "Yield": 6446.4
+        },
+        {
+            "Days_Dry": 133,
+            "Yield": 14694.0
+        },
+        {
+            "Days_Dry": 46,
+            "Yield": 10017.7
+        },
+        {
+            "Days_Dry": 44,
+            "Yield": 10112.5
+        },
+        {
+            "Days_Dry": 120,
+            "Yield": 4916.7
+        },
+        {
+            "Days_Dry": 55,
+            "Yield": 7473.0
+        },
+        {
+            "Days_Dry": 93,
+            "Yield": 9236.8
+        },
+        {
+            "Days_Dry": 44,
+            "Yield": 10724.6
+        },
+        {
+            "Days_Dry": 25,
+            "Yield": 4714.7
+        },
+        {
+            "Days_Dry": 70,
+            "Yield": 6575.4
+        },
+        {
+            "Days_Dry": 69,
+            "Yield": 8253.0
+        },
+        {
+            "Days_Dry": 48,
+            "Yield": 7343.1
+        },
+        {
+            "Days_Dry": 81,
+            "Yield": 9412.7
+        },
+        {
+            "Days_Dry": 50,
+            "Yield": 10326.9
+        },
+        {
+            "Days_Dry": 54,
+            "Yield": 7286.9
+        },
+        {
+            "Days_Dry": 50,
+            "Yield": 8186.0
+        },
+        {
+            "Days_Dry": 50,
+            "Yield": 7443.4
+        },
+        {
+            "Days_Dry": 44,
+            "Yield": 8114.8
+        },
+        {
+            "Days_Dry": 51,
+            "Yield": 8650.7
+        },
+        {
+            "Days_Dry": 52,
+            "Yield": 9163.9
+        },
+        {
+            "Days_Dry": 82,
+            "Yield": 6269.0
+        },
+        {
+            "Days_Dry": 46,
+            "Yield": 11345.0
+        },
+        {
+            "Days_Dry": 47,
+            "Yield": 7888.6
+        },
+        {
+            "Days_Dry": 59,
+            "Yield": 8104.0
+        },
+        {
+            "Days_Dry": 52,
+            "Yield": 9366.6
+        },
+        {
+            "Days_Dry": 58,
+            "Yield": 8129.0
+        },
+        {
+            "Days_Dry": 60,
+            "Yield": 6111.7
+        },
+        {
+            "Days_Dry": 56,
+            "Yield": 7212.0
+        },
+        {
+            "Days_Dry": 44,
+            "Yield": 8537.1
+        },
+        {
+            "Days_Dry": 52,
+            "Yield": 9787.3
+        },
+        {
+            "Days_Dry": 65,
+            "Yield": 5800.7
+        },
+        {
+            "Days_Dry": 47,
+            "Yield": 10746.1
+        },
+        {
+            "Days_Dry": 52,
+            "Yield": 10891.0
+        },
+        {
+            "Days_Dry": 78,
+            "Yield": 9130.1
+        },
+        {
+            "Days_Dry": 48,
+            "Yield": 7644.3
+        },
+        {
+            "Days_Dry": 50,
+            "Yield": 8530.3
+        },
+        {
+            "Days_Dry": 64,
+            "Yield": 7562.9
+        },
+        {
+            "Days_Dry": 103,
+            "Yield": 7916.0
+        },
+        {
+            "Days_Dry": 67,
+            "Yield": 7606.0
+        },
+        {
+            "Days_Dry": 98,
+            "Yield": 6445.4
+        },
+        {
+            "Days_Dry": 22,
+            "Yield": 1625.5
+        },
+        {
+            "Days_Dry": 62,
+            "Yield": 8054.0
+        },
+        {
+            "Days_Dry": 52,
+            "Yield": 7877.0
+        },
+        {
+            "Days_Dry": 82,
+            "Yield": 8799.8
+        },
+        {
+            "Days_Dry": 51,
+            "Yield": 10193.6
+        },
+        {
+            "Days_Dry": 66,
+            "Yield": 8910.0
+        },
+        {
+            "Days_Dry": 53,
+            "Yield": 7915.0
+        },
+        {
+            "Days_Dry": 103,
+            "Yield": 12400.3
+        },
+        {
+            "Days_Dry": 50,
+            "Yield": 7846.8
+        },
+        {
+            "Days_Dry": 53,
+            "Yield": 9116.9
+        },
+        {
+            "Days_Dry": 65,
+            "Yield": 7763.4
+        },
+        {
+            "Days_Dry": 47,
+            "Yield": 5879.8
+        },
+        {
+            "Days_Dry": 59,
+            "Yield": 6926.6
+        },
+        {
+            "Days_Dry": 61,
+            "Yield": 10153.0
+        },
+        {
+            "Days_Dry": 61,
+            "Yield": 9832.0
+        },
+        {
+            "Days_Dry": 43,
+            "Yield": 7757.0
+        },
+        {
+            "Days_Dry": 58,
+            "Yield": 9254.7
+        },
+        {
+            "Days_Dry": 68,
+            "Yield": 10582.9
+        },
+        {
+            "Days_Dry": 49,
+            "Yield": 10142.2
+        },
+        {
+            "Days_Dry": 58,
+            "Yield": 9312.8
+        },
+        {
+            "Days_Dry": 52,
+            "Yield": 10098.0
+        },
+        {
+            "Days_Dry": 50,
+            "Yield": 11622.0
+        },
+        {
+            "Days_Dry": 53,
+            "Yield": 8760.4
+        },
+        {
+            "Days_Dry": 116,
+            "Yield": 7748.0
+        },
+        {
+            "Days_Dry": 60,
+            "Yield": 9144.3
+        },
+        {
+            "Days_Dry": 54,
+            "Yield": 7509.7
+        },
+        {
+            "Days_Dry": 59,
+            "Yield": 8961.6
+        },
+        {
+            "Days_Dry": 54,
+            "Yield": 7083.0
+        },
+        {
+            "Days_Dry": 47,
+            "Yield": 6660.0
+        },
+        {
+            "Days_Dry": 112,
+            "Yield": 10224.8
+        },
+        {
+            "Days_Dry": 45,
+            "Yield": 10592.8
+        },
+        {
+            "Days_Dry": 45,
+            "Yield": 7694.3
+        },
+        {
+            "Days_Dry": 73,
+            "Yield": 9324.4
+        },
+        {
+            "Days_Dry": 47,
+            "Yield": 8382.5
+        },
+        {
+            "Days_Dry": 72,
+            "Yield": 7523.7
+        },
+        {
+            "Days_Dry": 53,
+            "Yield": 10020.3
+        },
+        {
+            "Days_Dry": 57,
+            "Yield": 7212.0
+        },
+        {
+            "Days_Dry": 47,
+            "Yield": 7773.1
+        },
+        {
+            "Days_Dry": 52,
+            "Yield": 9217.2
+        },
+        {
+            "Days_Dry": 55,
+            "Yield": 8626.0
+        },
+        {
+            "Days_Dry": 116,
+            "Yield": 7516.0
+        },
+        {
+            "Days_Dry": 49,
+            "Yield": 9444.0
+        },
+        {
+            "Days_Dry": 50,
+            "Yield": 9727.0
+        },
+        {
+            "Days_Dry": 58,
+            "Yield": 8555.3
+        },
+        {
+            "Days_Dry": 62,
+            "Yield": 7978.4
+        },
+        {
+            "Days_Dry": 66,
+            "Yield": 8733.5
+        },
+        {
+            "Days_Dry": 54,
+            "Yield": 8255.5
+        },
+        {
+            "Days_Dry": 92,
+            "Yield": 6687.2
+        },
+        {
+            "Days_Dry": 52,
+            "Yield": 6533.1
+        },
+        {
+            "Days_Dry": 115,
+            "Yield": 7201.0
+        },
+        {
+            "Days_Dry": 49,
+            "Yield": 10250.0
+        },
+        {
+            "Days_Dry": 43,
+            "Yield": 10138.0
+        },
+        {
+            "Days_Dry": 96,
+            "Yield": 6573.2
+        },
+        {
+            "Days_Dry": 47,
+            "Yield": 8706.8
+        },
+        {
+            "Days_Dry": 61,
+            "Yield": 8311.3
+        },
+        {
+            "Days_Dry": 120,
+            "Yield": 5268.3
+        },
+        {
+            "Days_Dry": 60,
+            "Yield": 10046.9
+        },
+        {
+            "Days_Dry": 56,
+            "Yield": 7864.0
+        },
+        {
+            "Days_Dry": 52,
+            "Yield": 8561.3
+        },
+        {
+            "Days_Dry": 45,
+            "Yield": 11002.8
+        },
+        {
+            "Days_Dry": 63,
+            "Yield": 7270.7
+        },
+        {
+            "Days_Dry": 57,
+            "Yield": 8048.4
+        },
+        {
+            "Days_Dry": 48,
+            "Yield": 7729.6
+        },
+        {
+            "Days_Dry": 55,
+            "Yield": 7523.6
+        },
+        {
+            "Days_Dry": 52,
+            "Yield": 9393.0
+        },
+        {
+            "Days_Dry": 126,
+            "Yield": 6977.3
+        },
+        {
+            "Days_Dry": 50,
+            "Yield": 5177.5
+        },
+        {
+            "Days_Dry": 102,
+            "Yield": 8532.8
+        },
+        {
+            "Days_Dry": 54,
+            "Yield": 7582.8
+        },
+        {
+            "Days_Dry": 55,
+            "Yield": 6808.2
+        },
+        {
+            "Days_Dry": 43,
+            "Yield": 7651.0
+        },
+        {
+            "Days_Dry": 52,
+            "Yield": 6463.0
+        },
+        {
+            "Days_Dry": 62,
+            "Yield": 8697.8
+        },
+        {
+            "Days_Dry": 60,
+            "Yield": 9500.8
+        },
+        {
+            "Days_Dry": 57,
+            "Yield": 6593.2
+        },
+        {
+            "Days_Dry": 50,
+            "Yield": 7990.3
+        },
+        {
+            "Days_Dry": 94,
+            "Yield": 10764.8
+        },
+        {
+            "Days_Dry": 46,
+            "Yield": 7714.0
+        },
+        {
+            "Days_Dry": 106,
+            "Yield": 6361.3
+        },
+        {
+            "Days_Dry": 53,
+            "Yield": 9450.5
+        },
+        {
+            "Days_Dry": 56,
+            "Yield": 7659.2
+        },
+        {
+            "Days_Dry": 51,
+            "Yield": 6956.0
+        },
+        {
+            "Days_Dry": 54,
+            "Yield": 6713.4
+        },
+        {
+            "Days_Dry": 54,
+            "Yield": 5631.5
+        },
+        {
+            "Days_Dry": 50,
+            "Yield": 7359.7
+        },
+        {
+            "Days_Dry": 96,
+            "Yield": 12127.0
+        },
+        {
+            "Days_Dry": 53,
+            "Yield": 8253.3
+        },
+        {
+            "Days_Dry": 40,
+            "Yield": 8209.0
+        },
+        {
+            "Days_Dry": 61,
+            "Yield": 8478.0
+        },
+        {
+            "Days_Dry": 55,
+            "Yield": 11693.0
+        },
+        {
+            "Days_Dry": 124,
+            "Yield": 8631.8
+        },
+        {
+            "Days_Dry": 57,
+            "Yield": 8413.6
+        },
+        {
+            "Days_Dry": 56,
+            "Yield": 8043.6
+        },
+        {
+            "Days_Dry": 50,
+            "Yield": 10329.9
+        },
+        {
+            "Days_Dry": 56,
+            "Yield": 6573.2
+        },
+        {
+            "Days_Dry": 120,
+            "Yield": 6984.6
+        },
+        {
+            "Days_Dry": 53,
+            "Yield": 6680.8
+        },
+        {
+            "Days_Dry": 91,
+            "Yield": 6843.0
+        },
+        {
+            "Days_Dry": 61,
+            "Yield": 8862.6
+        },
+        {
+            "Days_Dry": 44,
+            "Yield": 9030.7
+        },
+        {
+            "Days_Dry": 81,
+            "Yield": 8063.1
+        },
+        {
+            "Days_Dry": 66,
+            "Yield": 9849.7
+        },
+        {
+            "Days_Dry": 47,
+            "Yield": 10568.0
+        },
+        {
+            "Days_Dry": 60,
+            "Yield": 8521.1
+        },
+        {
+            "Days_Dry": 122,
+            "Yield": 5442.8
+        },
+        {
+            "Days_Dry": 50,
+            "Yield": 9622.2
+        },
+        {
+            "Days_Dry": 53,
+            "Yield": 7345.3
+        },
+        {
+            "Days_Dry": 127,
+            "Yield": 7653.1
+        },
+        {
+            "Days_Dry": 76,
+            "Yield": 6162.0
+        },
+        {
+            "Days_Dry": 49,
+            "Yield": 8746.8
+        },
+        {
+            "Days_Dry": 48,
+            "Yield": 10282.4
+        },
+        {
+            "Days_Dry": 48,
+            "Yield": 9962.0
+        },
+        {
+            "Days_Dry": 70,
+            "Yield": 6817.4
+        },
+        {
+            "Days_Dry": 47,
+            "Yield": 7628.7
+        },
+        {
+            "Days_Dry": 55,
+            "Yield": 8624.0
+        },
+        {
+            "Days_Dry": 47,
+            "Yield": 8975.0
+        },
+        {
+            "Days_Dry": 48,
+            "Yield": 6352.4
+        },
+        {
+            "Days_Dry": 53,
+            "Yield": 8878.1
+        },
+        {
+            "Days_Dry": 44,
+            "Yield": 10676.4
+        },
+        {
+            "Days_Dry": 86,
+            "Yield": 10629.2
+        },
+        {
+            "Days_Dry": 34,
+            "Yield": 18.9
+        },
+        {
+            "Days_Dry": 47,
+            "Yield": 9737.8
+        },
+        {
+            "Days_Dry": 81,
+            "Yield": 9012.0
+        },
+        {
+            "Days_Dry": 102,
+            "Yield": 12528.0
+        },
+        {
+            "Days_Dry": 53,
+            "Yield": 6047.8
+        },
+        {
+            "Days_Dry": 51,
+            "Yield": 7425.6
+        },
+        {
+            "Days_Dry": 69,
+            "Yield": 7801.6
+        },
+        {
+            "Days_Dry": 52,
+            "Yield": 5627.0
+        },
+        {
+            "Days_Dry": 85,
+            "Yield": 9984.6
+        },
+        {
+            "Days_Dry": 54,
+            "Yield": 13205.5
+        },
+        {
+            "Days_Dry": 45,
+            "Yield": 7261.0
+        },
+        {
+            "Days_Dry": 49,
+            "Yield": 8062.6
+        },
+        {
+            "Days_Dry": 73,
+            "Yield": 10291.2
+        },
+        {
+            "Days_Dry": 69,
+            "Yield": 8913.0
+        },
+        {
+            "Days_Dry": 50,
+            "Yield": 9621.0
+        },
+        {
+            "Days_Dry": 68,
+            "Yield": 8656.0
+        },
+        {
+            "Days_Dry": 81,
+            "Yield": 11435.5
+        },
+        {
+            "Days_Dry": 49,
+            "Yield": 8916.0
+        },
+        {
+            "Days_Dry": 56,
+            "Yield": 8320.0
+        },
+        {
+            "Days_Dry": 40,
+            "Yield": 10552.0
+        },
+        {
+            "Days_Dry": 83,
+            "Yield": 6668.0
+        },
+        {
+            "Days_Dry": 90,
+            "Yield": 6895.7
+        },
+        {
+            "Days_Dry": 53,
+            "Yield": 9218.0
+        },
+        {
+            "Days_Dry": 80,
+            "Yield": 7251.9
+        },
+        {
+            "Days_Dry": 55,
+            "Yield": 13893.9
+        },
+        {
+            "Days_Dry": 52,
+            "Yield": 7558.6
+        },
+        {
+            "Days_Dry": 51,
+            "Yield": 6532.7
+        },
+        {
+            "Days_Dry": 53,
+            "Yield": 8566.5
+        },
+        {
+            "Days_Dry": 49,
+            "Yield": 8104.0
+        },
+        {
+            "Days_Dry": 132,
+            "Yield": 10696.0
+        },
+        {
+            "Days_Dry": 72,
+            "Yield": 8083.7
+        },
+        {
+            "Days_Dry": 86,
+            "Yield": 6159.8
+        },
+        {
+            "Days_Dry": 52,
+            "Yield": 8211.3
+        },
+        {
+            "Days_Dry": 49,
+            "Yield": 8664.0
+        },
+        {
+            "Days_Dry": 73,
+            "Yield": 9633.6
+        },
+        {
+            "Days_Dry": 48,
+            "Yield": 7662.0
+        },
+        {
+            "Days_Dry": 52,
+            "Yield": 10929.0
+        },
+        {
+            "Days_Dry": 43,
+            "Yield": 8680.6
+        },
+        {
+            "Days_Dry": 66,
+            "Yield": 6856.8
+        },
+        {
+            "Days_Dry": 48,
+            "Yield": 10168.2
+        },
+        {
+            "Days_Dry": 116,
+            "Yield": 7184.0
+        },
+        {
+            "Days_Dry": 51,
+            "Yield": 7706.3
+        },
+        {
+            "Days_Dry": 60,
+            "Yield": 13162.0
+        },
+        {
+            "Days_Dry": 51,
+            "Yield": 8981.7
+        },
+        {
+            "Days_Dry": 73,
+            "Yield": 5314.9
+        },
+        {
+            "Days_Dry": 65,
+            "Yield": 7341.8
+        },
+        {
+            "Days_Dry": 49,
+            "Yield": 7047.2
+        },
+        {
+            "Days_Dry": 56,
+            "Yield": 10087.5
+        },
+        {
+            "Days_Dry": 64,
+            "Yield": 9071.7
+        },
+        {
+            "Days_Dry": 46,
+            "Yield": 9919.8
+        },
+        {
+            "Days_Dry": 87,
+            "Yield": 5418.8
+        },
+        {
+            "Days_Dry": 92,
+            "Yield": 8023.4
+        },
+        {
+            "Days_Dry": 115,
+            "Yield": 8096.0
+        },
+        {
+            "Days_Dry": 57,
+            "Yield": 9682.0
+        },
+        {
+            "Days_Dry": 54,
+            "Yield": 7366.7
+        },
+        {
+            "Days_Dry": 54,
+            "Yield": 7819.4
+        },
+        {
+            "Days_Dry": 63,
+            "Yield": 13444.2
+        },
+        {
+            "Days_Dry": 63,
+            "Yield": 8317.0
+        },
+        {
+            "Days_Dry": 130,
+            "Yield": 9751.9
+        },
+        {
+            "Days_Dry": 51,
+            "Yield": 9902.7
+        },
+        {
+            "Days_Dry": 115,
+            "Yield": 11599.6
+        },
+        {
+            "Days_Dry": 122,
+            "Yield": 9289.2
+        },
+        {
+            "Days_Dry": 110,
+            "Yield": 7109.0
+        },
+        {
+            "Days_Dry": 48,
+            "Yield": 10665.5
+        },
+        {
+            "Days_Dry": 79,
+            "Yield": 11272.5
+        },
+        {
+            "Days_Dry": 47,
+            "Yield": 8428.1
+        },
+        {
+            "Days_Dry": 51,
+            "Yield": 7955.7
+        },
+        {
+            "Days_Dry": 55,
+            "Yield": 6567.0
+        },
+        {
+            "Days_Dry": 48,
+            "Yield": 7470.3
+        },
+        {
+            "Days_Dry": 42,
+            "Yield": 9925.2
+        },
+        {
+            "Days_Dry": 41,
+            "Yield": 6907.1
+        },
+        {
+            "Days_Dry": 74,
+            "Yield": 7622.3
+        },
+        {
+            "Days_Dry": 68,
+            "Yield": 7536.0
+        },
+        {
+            "Days_Dry": 43,
+            "Yield": 5686.6
+        },
+        {
+            "Days_Dry": 47,
+            "Yield": 7576.0
+        },
+        {
+            "Days_Dry": 59,
+            "Yield": 9219.2
+        },
+        {
+            "Days_Dry": 72,
+            "Yield": 7913.2
+        },
+        {
+            "Days_Dry": 106,
+            "Yield": 7090.4
+        },
+        {
+            "Days_Dry": 51,
+            "Yield": 7613.2
+        },
+        {
+            "Days_Dry": 92,
+            "Yield": 6120.0
+        },
+        {
+            "Days_Dry": 55,
+            "Yield": 9031.1
+        },
+        {
+            "Days_Dry": 114,
+            "Yield": 4714.7
+        },
+        {
+            "Days_Dry": 91,
+            "Yield": 7051.5
+        },
+        {
+            "Days_Dry": 51,
+            "Yield": 8772.7
+        },
+        {
+            "Days_Dry": 44,
+            "Yield": 10819.0
+        },
+        {
+            "Days_Dry": 61,
+            "Yield": 9269.6
+        },
+        {
+            "Days_Dry": 49,
+            "Yield": 10661.4
+        },
+        {
+            "Days_Dry": 111,
+            "Yield": 9908.5
+        },
+        {
+            "Days_Dry": 60,
+            "Yield": 8488.8
+        },
+        {
+            "Days_Dry": 53,
+            "Yield": 9290.0
+        },
+        {
+            "Days_Dry": 103,
+            "Yield": 10569.0
+        },
+        {
+            "Days_Dry": 57,
+            "Yield": 10717.1
+        },
+        {
+            "Days_Dry": 93,
+            "Yield": 8354.0
+        },
+        {
+            "Days_Dry": 53,
+            "Yield": 10244.2
+        },
+        {
+            "Days_Dry": 50,
+            "Yield": 10015.1
+        },
+        {
+            "Days_Dry": 61,
+            "Yield": 6736.9
+        },
+        {
+            "Days_Dry": 52,
+            "Yield": 8616.4
+        },
+        {
+            "Days_Dry": 67,
+            "Yield": 9090.9
+        },
+        {
+            "Days_Dry": 50,
+            "Yield": 8267.0
+        },
+        {
+            "Days_Dry": 53,
+            "Yield": 4979.8
+        },
+        {
+            "Days_Dry": 54,
+            "Yield": 11693.4
+        },
+        {
+            "Days_Dry": 70,
+            "Yield": 9150.0
+        },
+        {
+            "Days_Dry": 106,
+            "Yield": 11793.2
+        },
+        {
+            "Days_Dry": 52,
+            "Yield": 10845.5
+        },
+        {
+            "Days_Dry": 83,
+            "Yield": 9133.5
+        },
+        {
+            "Days_Dry": 51,
+            "Yield": 7854.0
+        },
+        {
+            "Days_Dry": 53,
+            "Yield": 10776.1
+        },
+        {
+            "Days_Dry": 93,
+            "Yield": 10756.7
+        },
+        {
+            "Days_Dry": 47,
+            "Yield": 9074.0
+        },
+        {
+            "Days_Dry": 50,
+            "Yield": 9023.2
+        },
+        {
+            "Days_Dry": 67,
+            "Yield": 7063.5
+        },
+        {
+            "Days_Dry": 57,
+            "Yield": 8392.6
+        },
+        {
+            "Days_Dry": 88,
+            "Yield": 6228.8
+        },
+        {
+            "Days_Dry": 56,
+            "Yield": 8501.1
+        },
+        {
+            "Days_Dry": 57,
+            "Yield": 7221.7
+        },
+        {
+            "Days_Dry": 54,
+            "Yield": 10790.4
+        },
+        {
+            "Days_Dry": 43,
+            "Yield": 11653.0
+        },
+        {
+            "Days_Dry": 59,
+            "Yield": 7593.2
+        }
+    ],
+    "persistency": [
+        {
+            "Peak": 27.0,
+            "Total": 6477.0
+        },
+        {
+            "Peak": 28.6,
+            "Total": 7888.7
+        },
+        {
+            "Peak": 29.9,
+            "Total": 6608.2
+        },
+        {
+            "Peak": 39.1,
+            "Total": 9466.0
+        },
+        {
+            "Peak": 32.2,
+            "Total": 6475.1
+        },
+        {
+            "Peak": 22.4,
+            "Total": 5579.5
+        },
+        {
+            "Peak": 30.1,
+            "Total": 7127.0
+        },
+        {
+            "Peak": 27.4,
+            "Total": 6484.6
+        },
+        {
+            "Peak": 32.8,
+            "Total": 9184.0
+        },
+        {
+            "Peak": 24.3,
+            "Total": 5454.5
+        },
+        {
+            "Peak": 35.7,
+            "Total": 8442.0
+        },
+        {
+            "Peak": 31.6,
+            "Total": 6195.7
+        },
+        {
+            "Peak": 41.3,
+            "Total": 7924.0
+        },
+        {
+            "Peak": 31.0,
+            "Total": 8207.5
+        },
+        {
+            "Peak": 33.1,
+            "Total": 7522.9
+        },
+        {
+            "Peak": 35.9,
+            "Total": 8070.0
+        },
+        {
+            "Peak": 29.5,
+            "Total": 6711.5
+        },
+        {
+            "Peak": 27.3,
+            "Total": 6067.8
+        },
+        {
+            "Peak": 25.6,
+            "Total": 5570.9
+        },
+        {
+            "Peak": 44.1,
+            "Total": 10120.0
+        },
+        {
+            "Peak": 35.2,
+            "Total": 8571.8
+        },
+        {
+            "Peak": 34.6,
+            "Total": 7710.0
+        },
+        {
+            "Peak": 28.3,
+            "Total": 6893.4
+        },
+        {
+            "Peak": 26.8,
+            "Total": 5380.2
+        },
+        {
+            "Peak": 29.3,
+            "Total": 7026.2
+        },
+        {
+            "Peak": 33.7,
+            "Total": 8330.0
+        },
+        {
+            "Peak": 29.2,
+            "Total": 6271.7
+        },
+        {
+            "Peak": 33.4,
+            "Total": 9291.0
+        },
+        {
+            "Peak": 35.4,
+            "Total": 8447.5
+        },
+        {
+            "Peak": 37.1,
+            "Total": 8330.6
+        },
+        {
+            "Peak": 34.8,
+            "Total": 11016.8
+        },
+        {
+            "Peak": 34.9,
+            "Total": 8572.0
+        },
+        {
+            "Peak": 32.5,
+            "Total": 7998.2
+        },
+        {
+            "Peak": 31.2,
+            "Total": 5999.5
+        },
+        {
+            "Peak": 33.7,
+            "Total": 10482.0
+        },
+        {
+            "Peak": 27.4,
+            "Total": 5761.0
+        },
+        {
+            "Peak": 27.7,
+            "Total": 6871.0
+        },
+        {
+            "Peak": 39.0,
+            "Total": 6655.8
+        },
+        {
+            "Peak": 21.8,
+            "Total": 4692.0
+        },
+        {
+            "Peak": 33.6,
+            "Total": 8931.0
+        },
+        {
+            "Peak": 31.3,
+            "Total": 6581.0
+        },
+        {
+            "Peak": 34.3,
+            "Total": 9465.8
+        },
+        {
+            "Peak": 33.5,
+            "Total": 6861.0
+        },
+        {
+            "Peak": 38.4,
+            "Total": 10718.0
+        },
+        {
+            "Peak": 27.3,
+            "Total": 5683.2
+        },
+        {
+            "Peak": 36.4,
+            "Total": 9196.0
+        },
+        {
+            "Peak": 33.2,
+            "Total": 9524.0
+        },
+        {
+            "Peak": 49.4,
+            "Total": 13358.0
+        },
+        {
+            "Peak": 33.7,
+            "Total": 7730.0
+        },
+        {
+            "Peak": 37.6,
+            "Total": 11132.0
+        },
+        {
+            "Peak": 30.6,
+            "Total": 7428.9
+        },
+        {
+            "Peak": 32.8,
+            "Total": 9846.3
+        },
+        {
+            "Peak": 30.0,
+            "Total": 6282.0
+        },
+        {
+            "Peak": 35.4,
+            "Total": 6850.8
+        },
+        {
+            "Peak": 34.5,
+            "Total": 9803.2
+        },
+        {
+            "Peak": 32.0,
+            "Total": 7679.0
+        },
+        {
+            "Peak": 36.2,
+            "Total": 7405.9
+        },
+        {
+            "Peak": 38.5,
+            "Total": 9676.7
+        },
+        {
+            "Peak": 27.8,
+            "Total": 7273.7
+        },
+        {
+            "Peak": 25.5,
+            "Total": 4905.6
+        },
+        {
+            "Peak": 35.0,
+            "Total": 8035.5
+        },
+        {
+            "Peak": 32.5,
+            "Total": 7554.4
+        },
+        {
+            "Peak": 28.5,
+            "Total": 7988.4
+        },
+        {
+            "Peak": 32.5,
+            "Total": 8058.0
+        },
+        {
+            "Peak": 30.6,
+            "Total": 8609.2
+        },
+        {
+            "Peak": 27.6,
+            "Total": 7617.2
+        },
+        {
+            "Peak": 32.9,
+            "Total": 7802.0
+        },
+        {
+            "Peak": 35.5,
+            "Total": 9354.6
+        },
+        {
+            "Peak": 48.8,
+            "Total": 8547.6
+        },
+        {
+            "Peak": 26.0,
+            "Total": 6417.5
+        },
+        {
+            "Peak": 32.0,
+            "Total": 7897.8
+        },
+        {
+            "Peak": 31.2,
+            "Total": 5429.1
+        },
+        {
+            "Peak": 37.3,
+            "Total": 7561.1
+        },
+        {
+            "Peak": 28.8,
+            "Total": 6117.1
+        },
+        {
+            "Peak": 31.4,
+            "Total": 6158.3
+        },
+        {
+            "Peak": 32.9,
+            "Total": 7461.8
+        },
+        {
+            "Peak": 32.5,
+            "Total": 7315.5
+        },
+        {
+            "Peak": 27.3,
+            "Total": 6405.5
+        },
+        {
+            "Peak": 27.8,
+            "Total": 7006.4
+        },
+        {
+            "Peak": 28.2,
+            "Total": 6235.9
+        },
+        {
+            "Peak": 26.3,
+            "Total": 5516.0
+        },
+        {
+            "Peak": 31.1,
+            "Total": 6832.0
+        },
+        {
+            "Peak": 27.4,
+            "Total": 6815.0
+        },
+        {
+            "Peak": 33.0,
+            "Total": 7122.9
+        },
+        {
+            "Peak": 36.0,
+            "Total": 8307.8
+        },
+        {
+            "Peak": 32.9,
+            "Total": 6585.8
+        },
+        {
+            "Peak": 30.2,
+            "Total": 7319.5
+        },
+        {
+            "Peak": 33.0,
+            "Total": 5988.7
+        },
+        {
+            "Peak": 35.6,
+            "Total": 10749.0
+        },
+        {
+            "Peak": 38.2,
+            "Total": 9297.6
+        },
+        {
+            "Peak": 31.3,
+            "Total": 6693.1
+        },
+        {
+            "Peak": 28.9,
+            "Total": 7095.5
+        },
+        {
+            "Peak": 29.1,
+            "Total": 5963.8
+        },
+        {
+            "Peak": 31.9,
+            "Total": 7946.0
+        },
+        {
+            "Peak": 24.1,
+            "Total": 5571.3
+        },
+        {
+            "Peak": 33.7,
+            "Total": 6835.0
+        },
+        {
+            "Peak": 33.1,
+            "Total": 7060.0
+        },
+        {
+            "Peak": 33.9,
+            "Total": 6373.2
+        },
+        {
+            "Peak": 26.5,
+            "Total": 4978.0
+        },
+        {
+            "Peak": 29.6,
+            "Total": 7212.0
+        },
+        {
+            "Peak": 31.7,
+            "Total": 7145.0
+        },
+        {
+            "Peak": 32.7,
+            "Total": 8388.8
+        },
+        {
+            "Peak": 34.0,
+            "Total": 7949.3
+        },
+        {
+            "Peak": 32.4,
+            "Total": 9172.6
+        },
+        {
+            "Peak": 31.4,
+            "Total": 6476.5
+        },
+        {
+            "Peak": 31.9,
+            "Total": 9634.2
+        },
+        {
+            "Peak": 31.6,
+            "Total": 7326.5
+        },
+        {
+            "Peak": 37.2,
+            "Total": 7341.2
+        },
+        {
+            "Peak": 30.6,
+            "Total": 8100.0
+        },
+        {
+            "Peak": 32.4,
+            "Total": 6736.0
+        },
+        {
+            "Peak": 32.9,
+            "Total": 6509.6
+        },
+        {
+            "Peak": 38.1,
+            "Total": 10728.0
+        },
+        {
+            "Peak": 32.3,
+            "Total": 7707.0
+        },
+        {
+            "Peak": 30.4,
+            "Total": 8009.6
+        },
+        {
+            "Peak": 26.1,
+            "Total": 5761.0
+        },
+        {
+            "Peak": 33.7,
+            "Total": 7986.8
+        },
+        {
+            "Peak": 33.9,
+            "Total": 7728.5
+        },
+        {
+            "Peak": 31.7,
+            "Total": 7830.5
+        },
+        {
+            "Peak": 33.0,
+            "Total": 7278.0
+        },
+        {
+            "Peak": 32.2,
+            "Total": 7095.8
+        },
+        {
+            "Peak": 34.3,
+            "Total": 7860.0
+        },
+        {
+            "Peak": 36.5,
+            "Total": 6471.9
+        },
+        {
+            "Peak": 34.9,
+            "Total": 9643.0
+        },
+        {
+            "Peak": 33.6,
+            "Total": 9106.0
+        },
+        {
+            "Peak": 29.5,
+            "Total": 7632.0
+        },
+        {
+            "Peak": 31.1,
+            "Total": 7727.5
+        },
+        {
+            "Peak": 33.8,
+            "Total": 6438.5
+        },
+        {
+            "Peak": 26.9,
+            "Total": 6175.9
+        },
+        {
+            "Peak": 25.6,
+            "Total": 5582.8
+        },
+        {
+            "Peak": 33.4,
+            "Total": 8337.0
+        },
+        {
+            "Peak": 34.7,
+            "Total": 7804.0
+        },
+        {
+            "Peak": 33.2,
+            "Total": 7399.6
+        },
+        {
+            "Peak": 29.4,
+            "Total": 6103.1
+        },
+        {
+            "Peak": 37.3,
+            "Total": 7767.0
+        },
+        {
+            "Peak": 34.8,
+            "Total": 8810.1
+        },
+        {
+            "Peak": 31.6,
+            "Total": 8446.0
+        },
+        {
+            "Peak": 4.2,
+            "Total": 1402.1
+        },
+        {
+            "Peak": 32.0,
+            "Total": 7952.0
+        },
+        {
+            "Peak": 31.5,
+            "Total": 9663.1
+        },
+        {
+            "Peak": 34.2,
+            "Total": 7840.0
+        },
+        {
+            "Peak": 39.7,
+            "Total": 10037.2
+        },
+        {
+            "Peak": 34.4,
+            "Total": 8607.8
+        },
+        {
+            "Peak": 35.1,
+            "Total": 10337.5
+        },
+        {
+            "Peak": 32.7,
+            "Total": 7014.3
+        },
+        {
+            "Peak": 33.8,
+            "Total": 7274.7
+        },
+        {
+            "Peak": 36.4,
+            "Total": 8826.0
+        },
+        {
+            "Peak": 31.6,
+            "Total": 7453.0
+        },
+        {
+            "Peak": 35.5,
+            "Total": 8011.0
+        },
+        {
+            "Peak": 33.8,
+            "Total": 8003.2
+        },
+        {
+            "Peak": 41.9,
+            "Total": 11270.0
+        },
+        {
+            "Peak": 29.8,
+            "Total": 7507.2
+        },
+        {
+            "Peak": 34.6,
+            "Total": 9496.0
+        },
+        {
+            "Peak": 35.5,
+            "Total": 9683.3
+        },
+        {
+            "Peak": 36.5,
+            "Total": 8415.7
+        },
+        {
+            "Peak": 32.4,
+            "Total": 9250.0
+        },
+        {
+            "Peak": 33.9,
+            "Total": 10892.4
+        },
+        {
+            "Peak": 33.7,
+            "Total": 8489.3
+        },
+        {
+            "Peak": 26.5,
+            "Total": 6340.0
+        },
+        {
+            "Peak": 36.9,
+            "Total": 9160.0
+        },
+        {
+            "Peak": 32.1,
+            "Total": 6460.0
+        },
+        {
+            "Peak": 32.9,
+            "Total": 9447.8
+        },
+        {
+            "Peak": 30.4,
+            "Total": 6814.6
+        },
+        {
+            "Peak": 37.3,
+            "Total": 10294.9
+        },
+        {
+            "Peak": 27.5,
+            "Total": 5775.0
+        },
+        {
+            "Peak": 29.8,
+            "Total": 7441.5
+        },
+        {
+            "Peak": 31.0,
+            "Total": 7916.3
+        },
+        {
+            "Peak": 28.7,
+            "Total": 6743.8
+        },
+        {
+            "Peak": 36.2,
+            "Total": 7767.0
+        },
+        {
+            "Peak": 34.4,
+            "Total": 8540.4
+        },
+        {
+            "Peak": 31.8,
+            "Total": 8782.0
+        },
+        {
+            "Peak": 30.0,
+            "Total": 6411.6
+        },
+        {
+            "Peak": 27.5,
+            "Total": 6403.6
+        },
+        {
+            "Peak": 32.2,
+            "Total": 8503.1
+        },
+        {
+            "Peak": 34.2,
+            "Total": 9550.0
+        },
+        {
+            "Peak": 32.3,
+            "Total": 7787.4
+        },
+        {
+            "Peak": 34.6,
+            "Total": 8965.9
+        },
+        {
+            "Peak": 24.2,
+            "Total": 5118.0
+        },
+        {
+            "Peak": 27.8,
+            "Total": 5637.5
+        },
+        {
+            "Peak": 37.8,
+            "Total": 9343.7
+        },
+        {
+            "Peak": 29.2,
+            "Total": 7716.8
+        },
+        {
+            "Peak": 35.5,
+            "Total": 8844.5
+        },
+        {
+            "Peak": 36.1,
+            "Total": 11084.6
+        },
+        {
+            "Peak": 26.0,
+            "Total": 5799.2
+        },
+        {
+            "Peak": 36.3,
+            "Total": 8956.9
+        },
+        {
+            "Peak": 27.4,
+            "Total": 5415.0
+        },
+        {
+            "Peak": 33.6,
+            "Total": 7519.4
+        },
+        {
+            "Peak": 29.2,
+            "Total": 6507.4
+        },
+        {
+            "Peak": 30.3,
+            "Total": 7513.1
+        },
+        {
+            "Peak": 37.8,
+            "Total": 7630.4
+        },
+        {
+            "Peak": 34.9,
+            "Total": 8161.5
+        },
+        {
+            "Peak": 35.6,
+            "Total": 9287.0
+        },
+        {
+            "Peak": 37.2,
+            "Total": 8237.1
+        },
+        {
+            "Peak": 29.2,
+            "Total": 5864.5
+        },
+        {
+            "Peak": 32.4,
+            "Total": 6893.5
+        },
+        {
+            "Peak": 32.2,
+            "Total": 8613.8
+        },
+        {
+            "Peak": 29.6,
+            "Total": 8483.0
+        },
+        {
+            "Peak": 27.3,
+            "Total": 6375.1
+        },
+        {
+            "Peak": 37.8,
+            "Total": 10559.5
+        },
+        {
+            "Peak": 36.2,
+            "Total": 7257.6
+        },
+        {
+            "Peak": 29.3,
+            "Total": 6751.5
+        },
+        {
+            "Peak": 40.6,
+            "Total": 9966.0
+        },
+        {
+            "Peak": 31.2,
+            "Total": 8020.6
+        },
+        {
+            "Peak": 30.4,
+            "Total": 6819.0
+        },
+        {
+            "Peak": 32.3,
+            "Total": 8098.0
+        },
+        {
+            "Peak": 25.6,
+            "Total": 7130.0
+        },
+        {
+            "Peak": 35.5,
+            "Total": 7965.5
+        },
+        {
+            "Peak": 32.5,
+            "Total": 7904.5
+        },
+        {
+            "Peak": 30.7,
+            "Total": 7456.0
+        },
+        {
+            "Peak": 33.6,
+            "Total": 8254.8
+        },
+        {
+            "Peak": 49.4,
+            "Total": 6868.2
+        },
+        {
+            "Peak": 32.8,
+            "Total": 6894.0
+        },
+        {
+            "Peak": 33.1,
+            "Total": 6762.0
+        },
+        {
+            "Peak": 33.6,
+            "Total": 7237.5
+        },
+        {
+            "Peak": 36.9,
+            "Total": 8408.0
+        },
+        {
+            "Peak": 38.5,
+            "Total": 9093.1
+        },
+        {
+            "Peak": 31.2,
+            "Total": 8124.0
+        },
+        {
+            "Peak": 26.3,
+            "Total": 5771.7
+        },
+        {
+            "Peak": 24.5,
+            "Total": 5724.0
+        },
+        {
+            "Peak": 30.5,
+            "Total": 6655.6
+        },
+        {
+            "Peak": 30.8,
+            "Total": 7542.4
+        },
+        {
+            "Peak": 32.8,
+            "Total": 7373.0
+        },
+        {
+            "Peak": 31.5,
+            "Total": 7479.3
+        },
+        {
+            "Peak": 26.0,
+            "Total": 6946.7
+        },
+        {
+            "Peak": 30.7,
+            "Total": 7000.0
+        },
+        {
+            "Peak": 36.7,
+            "Total": 8240.0
+        },
+        {
+            "Peak": 38.0,
+            "Total": 10001.0
+        },
+        {
+            "Peak": 38.6,
+            "Total": 7163.3
+        },
+        {
+            "Peak": 30.4,
+            "Total": 7470.0
+        },
+        {
+            "Peak": 28.6,
+            "Total": 8413.8
+        },
+        {
+            "Peak": 30.8,
+            "Total": 7121.0
+        },
+        {
+            "Peak": 42.3,
+            "Total": 7087.4
+        },
+        {
+            "Peak": 29.5,
+            "Total": 7909.6
+        },
+        {
+            "Peak": 29.7,
+            "Total": 7338.8
+        },
+        {
+            "Peak": 33.5,
+            "Total": 9219.8
+        },
+        {
+            "Peak": 30.9,
+            "Total": 6630.3
+        },
+        {
+            "Peak": 40.0,
+            "Total": 8998.0
+        },
+        {
+            "Peak": 32.6,
+            "Total": 7457.0
+        },
+        {
+            "Peak": 33.1,
+            "Total": 7047.0
+        },
+        {
+            "Peak": 40.5,
+            "Total": 11541.0
+        },
+        {
+            "Peak": 39.3,
+            "Total": 7717.8
+        },
+        {
+            "Peak": 32.3,
+            "Total": 7108.0
+        },
+        {
+            "Peak": 36.7,
+            "Total": 8434.7
+        },
+        {
+            "Peak": 31.3,
+            "Total": 4960.8
+        },
+        {
+            "Peak": 35.7,
+            "Total": 9175.0
+        },
+        {
+            "Peak": 36.3,
+            "Total": 6473.8
+        },
+        {
+            "Peak": 32.5,
+            "Total": 6543.5
+        },
+        {
+            "Peak": 31.9,
+            "Total": 8654.0
+        },
+        {
+            "Peak": 33.8,
+            "Total": 7921.0
+        },
+        {
+            "Peak": 33.1,
+            "Total": 7433.5
+        },
+        {
+            "Peak": 38.3,
+            "Total": 12791.0
+        },
+        {
+            "Peak": 29.8,
+            "Total": 6608.3
+        },
+        {
+            "Peak": 36.2,
+            "Total": 8562.1
+        },
+        {
+            "Peak": 30.8,
+            "Total": 8423.0
+        },
+        {
+            "Peak": 28.4,
+            "Total": 6114.2
+        },
+        {
+            "Peak": 26.6,
+            "Total": 5605.0
+        },
+        {
+            "Peak": 27.8,
+            "Total": 7205.9
+        },
+        {
+            "Peak": 27.8,
+            "Total": 5484.1
+        },
+        {
+            "Peak": 28.6,
+            "Total": 6222.1
+        },
+        {
+            "Peak": 37.6,
+            "Total": 8439.8
+        },
+        {
+            "Peak": 33.4,
+            "Total": 7784.0
+        },
+        {
+            "Peak": 30.2,
+            "Total": 5606.6
+        },
+        {
+            "Peak": 32.0,
+            "Total": 8748.9
+        },
+        {
+            "Peak": 30.9,
+            "Total": 7191.6
+        },
+        {
+            "Peak": 37.9,
+            "Total": 10978.0
+        },
+        {
+            "Peak": 31.2,
+            "Total": 8066.1
+        },
+        {
+            "Peak": 32.7,
+            "Total": 7868.0
+        },
+        {
+            "Peak": 37.3,
+            "Total": 6116.6
+        },
+        {
+            "Peak": 35.3,
+            "Total": 10024.5
+        },
+        {
+            "Peak": 34.3,
+            "Total": 10537.5
+        },
+        {
+            "Peak": 35.8,
+            "Total": 8294.8
+        },
+        {
+            "Peak": 34.5,
+            "Total": 6892.2
+        },
+        {
+            "Peak": 28.5,
+            "Total": 6056.2
+        },
+        {
+            "Peak": 27.0,
+            "Total": 6445.0
+        },
+        {
+            "Peak": 35.1,
+            "Total": 8852.0
+        },
+        {
+            "Peak": 31.7,
+            "Total": 8205.8
+        },
+        {
+            "Peak": 35.2,
+            "Total": 7973.4
+        },
+        {
+            "Peak": 25.3,
+            "Total": 5923.5
+        },
+        {
+            "Peak": 30.8,
+            "Total": 6721.3
+        },
+        {
+            "Peak": 31.2,
+            "Total": 7122.0
+        },
+        {
+            "Peak": 43.1,
+            "Total": 8386.1
+        },
+        {
+            "Peak": 35.9,
+            "Total": 9587.0
+        },
+        {
+            "Peak": 33.6,
+            "Total": 8585.5
+        },
+        {
+            "Peak": 26.2,
+            "Total": 5035.0
+        },
+        {
+            "Peak": 34.3,
+            "Total": 9064.0
+        },
+        {
+            "Peak": 31.2,
+            "Total": 6837.4
+        },
+        {
+            "Peak": 33.5,
+            "Total": 8402.2
+        },
+        {
+            "Peak": 33.6,
+            "Total": 7380.2
+        },
+        {
+            "Peak": 12.8,
+            "Total": 18.0
+        },
+        {
+            "Peak": 32.8,
+            "Total": 8890.8
+        },
+        {
+            "Peak": 36.2,
+            "Total": 9463.5
+        },
+        {
+            "Peak": 28.8,
+            "Total": 7029.1
+        },
+        {
+            "Peak": 33.6,
+            "Total": 8497.8
+        },
+        {
+            "Peak": 28.1,
+            "Total": 6300.0
+        },
+        {
+            "Peak": 24.4,
+            "Total": 5219.1
+        },
+        {
+            "Peak": 35.0,
+            "Total": 8919.4
+        },
+        {
+            "Peak": 30.4,
+            "Total": 8268.0
+        },
+        {
+            "Peak": 31.9,
+            "Total": 8052.0
+        },
+        {
+            "Peak": 35.8,
+            "Total": 7266.4
+        },
+        {
+            "Peak": 34.6,
+            "Total": 8212.0
+        },
+        {
+            "Peak": 26.5,
+            "Total": 5844.2
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+Ag-AI Dairy Farming Datasets
+===============================
+
+1. Global Cattle Disease Dataset (250k rows)
+   Source: Kaggle (Cattle Health and Feeding Records)
+   Usage: Multi-class symptom diagnosis, Dual AI Simulator (Health)
+
+2. Global Cattle Milk Yield Prediction Dataset
+   Source: Kaggle
+   Usage: Dual AI Simulator (Yield prediction based on vitals/environment)
+
+3. Superior Dairy Sires Records (Lactation Curves)
+   Source: Mendeley Data (Long-term lactation records)
+   Usage: Peak Yield Predictor (4-Year research tab)
+
+4. Czech Republic Milk Quality & Genetics Dataset
+   Source: Mendeley Data (Association between production and reproduction parameters)
+   Usage: Milk Quality Predictor (Fat/Protein Component AI)
+
+5. MmCows: Multimodal Dairy Cattle Dataset
+   Source: Kaggle / Hugging Face
+   Usage: Simulated IoT and behavioral analytics data
+
+6. Cow Mastitis & Visual Datasets
+   Source: Kaggle / Clinical Mastitis Cows v2
+   Usage: IoT Mastitis Warning Sensor Model, CNN Vision Mockup Model

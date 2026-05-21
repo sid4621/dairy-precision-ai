@@ -1,0 +1,443 @@
+AI-Based Predictive Modelling of Milk Production and Health Parameters in Dairy Cattle
+14 April 2026
+AI-based predictive modelling in the dairy industry focuses on improving operational efficiency by accurately forecasting milk yields and detecting health issues like mastitis or lameness up to a week before clinical symptoms appear. By integrating diverse data streams from wearable sensors, milking robots, and thermal cameras, these models enable a shift from reactive treatments to proactive health management. 
+ScienceDirect.com
+ScienceDirect.com
+ +3
+Key Predictive Models
+Milk Production Prediction:
+Random Forest (RF): Widely used for its ability to handle complex, non-linear relationships and missing data. One study achieved an 
+ of 0.875 using individual cow models.
+Neural Networks (MLP & LSTM): These models often show optimal stability and accuracy. Research indicates that combining Multi-Layer Perceptrons (MLP) and Long Short-Term Memory (LSTM) networks can reach an 
+ of 0.99 for milk yield estimation.
+nextMILK Model: A specialized RF model that uses previous lactation data to predict "healthy" yield residuals (MRT) in current lactations, helping identify metabolic success during the critical transition period.
+Health & Disease Detection:
+Mastitis Prediction: AI models analyze daily production indicators (like milk flow rate and conductivity) and thermal images to detect infections. Multi-modal frameworks have achieved up to 91.6% accuracy for early-stage disease detection.
+Metritis & Lameness: Neural networks and Support Vector Machines (SVM) are preferred for detecting these conditions. For instance, NN models have shown 96.1% accuracy in early metritis detection by monitoring rumination time and body weight. 
+ScienceDirect.com
+ScienceDirect.com
+ +6
+Data Sources and Parameters
+Predictive models rely on "Multi-modal" data—integrating physiological, behavioral, and environmental signals. 
+PubMed Central (PMC) (.gov)
+PubMed Central (PMC) (.gov)
+ +1
+Milking Station Sensors: Record yield, milk flow rate per quarter, electrical conductivity (to detect mastitis), and milk quality indicators like blood presence.
+Wearable/Internal Sensors: Boluses or collars track internal body temperature, rumination activity, water intake, and physical movement (standing/lying time).
+Computer Vision: Thermal cameras installed in parlors monitor udder and limb heat signatures to identify inflammation non-invasively. 
+ScienceDirect.com
+ScienceDirect.com
+ +3
+Core Benefits and Implementation Challenges
+Category 	Details
+Benefits	Early Warning: Identifies at-risk cows 6–10 days before clinical diagnosis.
+Efficiency: Optimizes feed management and reduces antibiotic reliance.
+Economic Gain: Increases ROI by minimizing production losses and medication costs.
+Challenges	Data Imbalance: Most cows are healthy, requiring specialized techniques like SMOTE to train models for rare disease events.
+Complexity: Significant technical expertise is needed for model calibration and real-time maintenance.
+Infrastructure: High initial costs and the need for reliable internet/IT systems, especially for small-scale farms.
+Would you like to explore a specific machine learning architecture (like Random Forest or LSTM) or more details on detecting a specific condition like subclinical mastitis?
+
+
+
+
+
+undefined
+undefined
+undefined
+17 sites
+Machine learning–based prediction of clinical mastitis in dairy cows: ...
+Random forest demonstrated superior predictive performance, significantly outperforming other algorithms with the highest F1-score...
+
+
+ScienceDirect.com
+Association of artificial intelligence–predicted milk yield ...
+Rumination time in the 21 d after calving was lower in the category with the most negative milk yield residuals (low MRT) compared...
+
+
+ScienceDirect.com
+Development of individual models for predicting cow milk production ...
+Highlights * • Time-series lactation curve data were preprocessed for modeling milk yield. * An individual model for predicting da...
+
+
+ScienceDirect.com
+Show all
+what all data we require to predict milk yield
+14 April 2026
+Predicting milk yield using AI requires integrating various data streams that capture the complex interplay between a cow's biology, its behavior, and its environment. Modern models, such as the nextMILK random forest model, typically categorize these into historical performance, current physiological status, and environmental conditions. 
+ScienceDirect.com
+ScienceDirect.com
+ +2
+1. Historical and Individual Performance Data
+Historical data is often the strongest predictor of future yield. 
+ScienceDirect.com
+ScienceDirect.com
+ +1
+Lactation History: Previous lactation yields at specific intervals (e.g., 21, 75, and 305 days) and overall averages, standard deviations, and maximums.
+Current Lactation Phase: Days in Milk (DIM), parity (number of calvings), and calving season.
+Animal Characteristics: Breed, age, and body weight.
+Genetics: Estimated breeding values (EBV) and pedigree information. 
+ScienceDirect.com
+ScienceDirect.com
+ +5
+2. Behavioral and Physiological Sensor Data
+Wearable sensors and automated milking systems (AMS) provide real-time metrics that signal health status and production potential. 
+ScienceDirect.com
+ScienceDirect.com
+ +1
+Activity & Resting: Minutes spent eating, ruminating, standing, and lying each day.
+Milking Patterns: Milking frequency, milk flow rate per quarter, and electrical conductivity of the milk (used to detect inflammation like mastitis).
+Biometrics: Heart rate, respiration rate, and body or eye temperature captured via sensors or thermal imaging. 
+ScienceDirect.com
+ScienceDirect.com
+ +3
+3. Nutritional and Health Indicators
+Feed and Water Intake: Daily dry matter intake (DMI) and water consumption.
+Milk Composition: Laboratory or on-site analysis of fat, protein, and lactose percentages, as well as somatic cell count (SCC) and urea concentration.
+Health Status: Visual indicators like Body Condition Score (BCS), locomotion scores (for lameness), and recorded incidences of diseases like ketosis or metritis. 
+ScienceDirect.com
+ScienceDirect.com
+ +6
+4. Environmental and Management Data
+External factors significantly impact yield by influencing stress levels and metabolic efficiency. 
+MDPI
+MDPI
+Climatic Factors: Ambient temperature, relative humidity, and the Temperature-Humidity Index (THI).
+Barn Conditions: Light intensity (photoperiod), wind speed, carbon dioxide concentration, and type of bedding (e.g., deep litter vs. mats).
+Management: Cow density per robot and specific breeding programs. 
+ScienceDirect.com
+ScienceDirect.com
+ +3
+Would you like to know which of these parameters—such as rumination time or THI—typically carries the most weight in improving the accuracy of these models?
+
+
+
+
+
+undefined
+undefined
+undefined
+13 sites
+Association of artificial intelligence–predicted milk yield ...
+INTRODUCTION * The continuous increase in yearly milk production of dairy cattle coincides with multiple challenges at cow level, ...
+
+
+ScienceDirect.com
+Machine Learning Techniques for Improving and Predicting ...
+Utilizing comprehensive farm data—such as lactation history, dietary intake, environmental variables, and cow health indicators—va...
+
+
+ResearchGate
+Evaluating the contribution of behavioral, milking system, and ...
+Exploratory analyses revealed clear differences in AMS traits across lactation stages and parities. Elevated THI reduced milk yiel...
+
+
+ScienceDirect.com
+Show all
+dataset link for milk yeild prediction
+14 April 2026
+For milk yield prediction and health monitoring in dairy cattle, several high-quality datasets are publicly available. These datasets range from vision-based images for classification to comprehensive multimodal sensor data. 
+Top Public Datasets
+MmCows: Multimodal Dairy Cattle Dataset: This is one of the most comprehensive datasets available for precision livestock farming. It includes synchronized data from 16 Holstein cows over 14 days, featuring 3D location (UWB), core body temperature, activity (accelerometers), and daily milk yield logs.
+Kaggle: MmCows Dataset
+GitHub: Project Code and Benchmarks
+Hugging Face: Fast Download Mirror
+Cow Images for Milk Yield Prediction: This dataset is specifically designed for deep learning models (like YOLO) to predict or classify milk yield based on visual features of the cow and its udder. It contains paired rear-view and side-view images labeled with 305-day milk yield records.
+Kaggle: Cow Visual Images Dataset
+Cattle Health and Feeding Data: Focuses on the relationship between nutrition, health indicators, and productivity. It includes records of feeding patterns alongside milk yield statistics, making it ideal for anomaly detection and productivity forecasting.
+Kaggle: Health and Feeding Records
+Performance of Superior Dairy Sires: A longitudinal dataset (2017–2021) from an Indonesian farm containing complete records for 1,189 cows. It includes milk yield, lactation length, peak production, and dry period length across four lactations.
+Mendeley Data: Superior Dairy Sires Records 
+Summary of Dataset Types
+Dataset 	Primary Modalities	Best Use Case
+MmCows	Sensors (UWB, IMU), Video, Milk Logs	Comprehensive health & behavior modeling
+Jembere (Kaggle)	RGB Images (Rear/Side), 305-day Yield	Vision-based yield classification
+Cattle Health	Feed intake, Health status, Daily Yield	Nutritional & metabolic efficiency research
+Ultra Farm (Mendeley)	Historic Production Records	Long-term lactation curve & genetic analysis
+Would you like to focus on a specific data type, such as vision-based images or sensor time-series, for your predictive model?
+
+
+
+
+
+
+
+
+9 sites
+NeurIPS Poster MmCows: A Multimodal Dataset for Dairy ...
+Multiple sensing modalities: MMCOWS is a large-scale fine-grained dataset of dairy cattle collected over a two-week period featuri...
+
+
+NeurIPS 2026
+MmCows: Dairy Cows Dataset - Kaggle
+About Dataset. MmCows is a large-scale multimodal dataset for behavior monitoring, health management, and dietary management of da...
+
+
+Kaggle
+Random Forest Modelling of Milk Yield of Dairy Cows under ...
+2.2. ... Among the 91 cows, at the beginning of the study, 41 were single-parity and 50 were multiparity. The data of the various ...
+
+
+MDPI
+Show all
+how can i newly improve to the older milk yeild prediction
+14 April 2026
+To improve upon older milk yield prediction models, you should move from static statistical methods to dynamic, multi-modal AI architectures. Recent research indicates that combining traditional lactation data with real-time sensor, genomic, and visual data can increase prediction accuracy by over 20%. 
+ResearchGate
+ResearchGate
+1. Upgrade Your Model Architecture
+Replace simple linear regressions with deep learning models that handle temporal and non-linear patterns: 
+Time-Series Models: Use LSTM (Long Short-Term Memory) or TSMixer. These are designed for daily records and can forecast up to two months ahead with high accuracy (
+
+).
+Hybrid Ensembles: Combine multiple algorithms, such as Random Forest (RF) and Support Vector Regression (SVR). Studies show that stacked ensembles often outperform single models.
+Computer Vision: Implement CNNs or YOLOv11 architectures to analyze udder shape and body condition directly from images. These models can classify yield potential with up to 95% accuracy when traditional records are missing. 
+ScienceDirect.com
+ScienceDirect.com
+ +3
+2. Integrate New Data Features
+Modern high-performing models use "Genomic-Phenomic" integration:
+Genomic Data: Incorporating Genomic Estimated Breeding Values (gEBV) allows for accurate predictions even for newborn calves or first-time mothers (primiparous cows).
+Environmental Factors: Include real-time climate data like the Temperature-Humidity Index (THI) and even barn light intensity. Adjusting for these can significantly reduce prediction error in extreme weather.
+Behavioral Biometrics: Add features like daily rumination time, eating time, and activity levels. These are early indicators of metabolic health that directly impact yield. 
+ScienceDirect.com
+ScienceDirect.com
+ +3
+3. Implement "Explainable AI" (XAI) 
+Older models are often "black boxes." Use techniques like SHAP (SHapley Additive exPlanations) to understand why a model made a specific prediction. This helps identify which traits—like udder height or feed intake—are the most critical drivers for a specific cow. 
+IEEE
+IEEE
+ +2
+Comparison: Traditional vs. Modern Approaches
+Feature 	Traditional Methods	Modern AI Improvements
+Data Type	Historical logs only	Real-time sensors, images, and genomics
+Accuracy	Linear (misses patterns)	Non-linear (captures complex interactions)
+Latency	Reactive (post-milking)	Proactive (predicts 7–10 days ahead)
+Deployment	Desktop/Static	Mobile apps for field-level use
+Would you like to see a Python code snippet for a Random Forest or LSTM model using one of these datasets?
+
+
+
+
+
+undefined
+undefined
+undefined
+14 sites
+Association of artificial intelligence–predicted milk yield ...
+This would allow us to monitor whether metabolically challenged animals indeed belong to the low MRT group. Another limitation of ...
+
+
+ScienceDirect.com
+Comparison of deep learning models for milk production ...
+Over a 6-year and 7-month period, we analyzed the temporal relationships among milk protein, fat, production, temperature, and Tem...
+
+ScienceDirect.com
+An effective way to incorporate temperature–humidity index to ...
+Correlation Results. Of all the input variables, DIM had the most influence on milk yield (Figure 3), with DIM and milk yield (the...
+
+
+ScienceDirect.com
+Show all
+to develop this model do i have to collect data from one particular dataset or multiple dataset
+14 April 2026
+To develop a high-performing milk yield prediction model, you do not have to limit yourself to a single dataset. In fact, combining data from multiple sources (known as data fusion) is the modern standard for achieving high accuracy and generalizability. 
+ResearchGate
+ResearchGate
+ +1
+While you can start with one dataset for a proof-of-concept, here is how you should decide between using one or multiple datasets:
+1. When to use a single dataset
+Using one particular dataset (e.g., from a single farm or a specific study) is best for niche optimization: 
+Specific Farm Management: If your goal is to build a tool for a specific farm, the model should prioritize that farm’s unique data (breed, feed types, and climate) to ensure local accuracy.
+Initial Prototyping: It is easier to clean and preprocess data from a single source where the sensor formats and logging intervals are consistent.
+Breed-Specific Models: Some research focuses on a single breed (like Holstein or Sahiwal) to capture precise biological traits without the "noise" of multi-breed variations. 
+Indian Council of Agricultural Research
+Indian Council of Agricultural Research
+ +5
+2. When to use multiple datasets
+Using multiple datasets is the superior approach if you want to develop a robust, commercial-grade tool: 
+Improved Accuracy: Combining sensor data (wearables) with environmental data (weather stations) and historical logs has been shown to increase prediction accuracy by up to 20%.
+Generalizability: Models trained on single-farm data often fail when moved to a different geographic region or a different production system (e.g., pasture-based vs. indoor). Using multiple datasets helps the AI "learn" beyond the limitations of one environment.
+Filling Data Gaps: If one dataset lacks weather information and another lacks health records, merging them allows the model to learn complex relationships, such as how heat stress (
+) impacts yield during specific disease events like mastitis. 
+ScienceDirect.com
+ScienceDirect.com
+ +4
+Summary Recommendation
+Strategy 	Complexity	Best For	Result
+One Dataset	Low	Academic exercises or single-farm apps	High local accuracy, poor generalizability.
+Multiple Datasets	High	Commercial software or regional monitoring	High robustness and ability to handle missing data.
+Pro Tip: If you choose to combine datasets, you must perform standardization (e.g., converting all units to kg/liters or standardizing time intervals) and use techniques like Data Preprocessing to handle inconsistencies between the sources. 
+Current Agriculture Research Journal
+Current Agriculture Research Journal
+ +1
+Would you like a guide on how to preprocess and merge two different types of dairy datasets (e.g., merging a weather CSV with a milking log)?
+
+
+
+
+
+undefined
+undefined
+undefined
+14 sites
+Comparison of artificial neural network and multiple linear ...
+Abstract. A comparative study of connectionist network (also known as artificial neural network, ANN)) and multiple regression is ...
+
+Indian Council of Agricultural Research
+Machine learning–based prediction of clinical mastitis in dairy cows: ...
+Despite these advances, current research faces several critical limitations that hinder widespread practical implementation. First...
+
+
+ScienceDirect.com
+Crop Selection and Yield Prediction using Machine Learning ...
+Materials and Methods Data Pre-processing. A technique called data pre-processing transforms unprocessed, uncleaned data ready for...
+
+
+Current Agriculture Research Journal
+Show all
+for using multiple dataset i want links for the dataset for developing this model
+14 April 2026
+To develop a robust model for predicting milk yield and health parameters, you can leverage several publicly available datasets that offer complementary modalities like sensor data, vision logs, and historical production records.
+Recommended Datasets for Multi-Modal Development
+MmCows (Comprehensive Sensor & Environmental Data):
+This is one of the most significant multi-modal datasets. It contains 14 days of synchronized data for 16 Holstein cows, featuring:
+Sensors: 3D location (UWB), body temperature, and neck/ankle acceleration.
+Environment: Indoor Temperature-Humidity Index (THI) and outdoor weather.
+Yield: Daily milk production logs and multi-view RGB images.
+Access: MmCows on Kaggle | Hugging Face Mirror.
+Superior Dairy Sires Records (Longitudinal Historical Data):
+Ideal for analyzing lactation curves and long-term production trends over multiple years (2017–2021).
+Features: Includes milk yield, lactation length, peak production, and dry period length for over 1,100 cows across four lactations.
+Access: Mendeley Data.
+Cow Images for Milk Yield (Vision-Based Data):
+Specifically curated for deep learning models like YOLO to predict yield based on physical traits.
+Features: Side-view and rear-view images paired with 305-day milk yield records.
+Access: Kaggle Dataset.
+Production and Health Association Dataset:
+Tracks the relationship between milk composition (fat, protein, lactose) and reproductive history.
+Features: Parity, calving intervals, and content analysis for thousands of dairy cows.
+Access: Mendeley Data.
+Cattle Health and Feeding Records:
+Focuses on the interplay between nutritional intake and productivity.
+Features: Dry matter intake (DMI), water consumption, and daily milk yield.
+Access: Kaggle Dataset. 
+Summary of Dataset Coverage
+Goal 	Best Dataset(s)	Key Feature
+Real-time Health Monitoring	MmCows	Body temp, activity, and THI.
+Lactation Curve Prediction	Superior Sires	Multi-year historical production.
+Visual Classification	Jembere (Kaggle)	Side/Rear udder images.
+Nutritional Efficiency	Health & Feeding	Feed intake vs. daily yield.
+Would you like to start with a Python-based data merging strategy to combine the sensor data from MmCows with historical production records?
+
+
+
+
+
+undefined
+undefined
+undefined
+7 sites
+MmCows: Dairy Cows Dataset - Kaggle
+About Dataset. MmCows is a large-scale multimodal dataset for behavior monitoring, health management, and dietary management of da...
+
+
+Kaggle
+Dataset for study: Association between production and ...
+This dataset provides key information on dairy cows, including individual IDs, breeding details, calving dates, and lactation peri...
+
+Mendeley Data
+Dataset for performance of superior dairy cattle sires based on ...
+2nd Lactation milk production was 7,761.66±1,145, the lactation length was 323.66±43.06 days, the condition of average peak produc...
+
+
+ScienceDirect.com
+Show all
+short do we have any dataset when cattle if unhealhty how milk yeild gets affected
+18 April 2026
+Yes, several high-quality datasets specifically document how milk yield is impacted when dairy cattle are unhealthy. These datasets are often used to build "resilience" indicators or early-warning systems for diseases like mastitis, lameness, and ketosis. 
+Top Datasets for Health-Impact Modeling
+Exploring Milk Loss and Variability (Frontiers in Genetics): This comprehensive dataset covers 8,935 lactations from 6,816 Chinese Holstein cows. It defines "milk loss traits" by measuring negative deviations from an expected lactation curve. It found that cows experience an average of 3.73 perturbations per lactation, with an average milk loss of 267 kg per cow.
+Source: Available via the study Exploring milk loss and variability during environmental perturbations.
+MmCows (Multimodal Dairy Cattle Dataset): A highly detailed dataset featuring multiple sensing modalities (UWB location, core body temperature, activity) alongside daily milk yield. It is used to show how behavior changes—like increased standing during heat stress or abnormal gait in lameness—directly correlate with decreased production.
+Source: MmCows Dataset on Kaggle.
+Decoding Onset and Recovery (Mastitis Impact): This retrospective study utilized data from 11 dairy farms (Spain, UK, Brazil) with 885,759 individual milk records. It specifically assesses milk yield depression in 3,473 cases of mild and severe mastitis, showing average production drops from ~35 kg/d to as low as 29.4 kg/d for severe cases.
+Source: ScienceDirect: Decoding onset and recovery patterns.
+Cow Mastitis (From milk) - Kaggle: A dedicated dataset for detecting mastitis using udder sensor measurements and body temperature. It provides a direct binary target (healthy vs. affected) to train predictive models on how these health indicators change milk quality and quantity.
+Source: Kaggle: Cow Mastitis Detection. 
+Summary of Yield Impact by Condition
+Condition 	Typical Yield Impact	Early Detection Window
+Mastitis	Loss of 50–300 kg per event.	Changes detectable 3 days before clinical signs.
+Lameness	Reduction of 28%–40% on day of diagnosis.	Yield drops detectable up to 4 months before.
+Ketosis	Reduction of 9 kg/d on day of diagnosis.	Detectable 5–6 days early via activity/yield.
+Winter Dysentery	Estimated total loss of 51 L/cow over 26 days.	Yield still reduced 4 months post-outbreak.
+Relevant Products for Early Detection
+For on-farm validation and data collection, researchers often use rapid diagnostic tools like the California Mastitis Test (CMT) or Dr. Naylor Mastitis Indicators to confirm health status. 
+Would you like help with a Python script to calculate these "milk loss traits" (deviations from a standard lactation curve) using one of these datasets?
+
+
+
+
+To significantly improve upon standard milk yield models, focus on Explainable AI (XAI), Real-Time Multi-Modal Fusion, and Genomic-Environmental Integration. Recent 2025–2026 research indicates that these advanced techniques can push accuracy (
+) near 0.99. 
+ResearchGate
+ResearchGate
+ +1
+1. Implement Explainable AI (XAI) 
+Older "black-box" models don't explain why a yield is low. Use XAI to bridge this gap: 
+SHAP (SHapley Additive exPlanations): Use this framework to quantify how much each factor (e.g., rumination time, weather, or parity) contributes to a specific prediction. 
+Amrita Vishwa Vidyapeetham
+Amrita Vishwa Vidyapeetham
+ +1
+Actionable Insights: Instead of just a yield number, provide "prescriptive" alerts—e.g., "Predicted 10% yield drop due to 20% decrease in lying time, indicating potential lameness". 
+Frontiers in Health Informatics
+Frontiers in Health Informatics
+ +1
+2. Transition to Multi-Modal Fusion
+Combine diverse data streams rather than just relying on historical logs.
+Visual Data (Computer Vision): Integrate CNNs or YOLO models to analyze udder shape, body condition score (BCS), and facial recognition for behavioral tracking. 
+ScienceDirect.com
+ScienceDirect.com
+ +2
+Spectral Analysis (FTIR): Incorporate milk component data (fat, protein, urea) from Fourier Transform Infrared (FTIR) spectroscopy to detect subclinical ketosis and nutritional imbalances early. 
+SINTEF
+SINTEF
+Real-Time IoT: Use Edge Computing on low-power devices to process sensor data (neck collars, leg tags) locally for instant health alerts. 
+ScienceDirect.com
+ScienceDirect.com
+ +2
+3. Incorporate Health Resilience Indicators 
+Predicting how a cow should have performed versus how she is performing identifies health perturbations.
+MRT (Milk Yield Residuals): Use models like nextMILK to calculate deviations from an expected lactation curve. Negative residuals (MRT) are strong metabolic indicators of transition success or failure. 
+ScienceDirect.com
+ScienceDirect.com
+Early Disease Detection: Target specific conditions like mastitis (using milk electrical conductivity) or lameness (using locomotion sensors) to predict yield losses up to 7–10 days before clinical signs. 
+PubMed Central (PMC) (.gov)
+PubMed Central (PMC) (.gov)
+4. Advanced Machine Learning Architectures
+Move beyond simple Random Forests to hybrid and temporal models:
+Ensemble Stacking: Combine XGBoost, AdaBoost, and Random Forest to balance sensitivity and precision for health categorization.
+LSTM & MLP: Hybrid Neural Networks (Long Short-Term Memory and Multi-Layer Perceptrons) have demonstrated nearly perfect stability (
+
+) for daily yield estimation. 
+ScienceDirect.com
+ScienceDirect.com
+ +2
+Summary of Improvement Impacts
+Improvement 	Typical Gain	Key Research (2025/2026)
+Adding Behavioral Data	Reduces Error (MAE) by ~10%	Journal of Dairy Science (2025)
+Hybrid MLP/LSTM	
+ up to 0.99	ResearchGate (2025)
+XAI (SHAP)	Increases Trust & Actionability	Amrita University Research
+For a deeper understanding of how AI transforms these diverse data streams into actionable farm management:
+Related video thumbnail
+25:05
+How AI is Transforming Dairy Farming
+
+Beko Academy For Dairy Science
+YouTube• 14 Apr 2026
+Would you like a comparative table of specific machine learning algorithms (like XGBoost vs. LSTM) showing their performance on these tasks?
+
+
+
+
