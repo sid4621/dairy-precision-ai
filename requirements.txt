@@ -10,3 +10,4 @@ pydantic
 matplotlib
 seaborn
 tensorflow
+python-multipart
