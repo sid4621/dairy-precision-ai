@@ -28,16 +28,17 @@
         .alert-box h4 { margin: 0 0 10px 0; color: #856404; font-size: 1.1em; }
         .alert-box p { margin: 0; font-size: 0.95em; color: #856404; font-weight: bold; }
 
-        .optimum-box { background: #e3f2fd; padding: 15px 20px; border-radius: 6px; margin-bottom: 15px; border: 1px solid #bbdefb; }
-        .optimum-box h4 { margin: 0 0 10px 0; color: #0277bd; font-size: 1.1em; }
-        .optimum-box ul { margin: 0; padding-left: 20px; font-size: 0.95em; color: #333; }
-
         .feedback-controls { background: #fafafa; padding: 20px; border-radius: 6px; border: 1px dashed #ced4da; margin-top: 20px; }
         .radio-group { margin-bottom: 15px; font-weight: bold; color: #2c3e50; }
         .radio-group label { margin-right: 20px; cursor: pointer; font-weight: normal; color: #333; }
         .feedback-box { width: 100%; height: 80px; padding: 12px; border-radius: 6px; border: 1px solid #ced4da; font-family: inherit; resize: vertical; box-sizing: border-box; }
         .feedback-box:focus { outline: none; border-color: #3498db; }
         
+        .proposal-item { display:flex; align-items:flex-start; margin-bottom:15px; padding:15px; background:white; border-radius:8px; border:1px solid #e0e0e0; }
+        .proposal-item input { margin-top: 5px; margin-right: 15px; transform: scale(1.5); cursor: pointer; }
+        .proposal-item strong { color: #1e3c72; font-size: 1.1em; }
+        .proposal-item p { margin: 5px 0 0 0; font-size: 0.95em; color: #555; }
+
         .btn { display: inline-block; padding: 12px 24px; background: #3498db; color: white; text-decoration: none; border-radius: 6px; font-weight: bold; transition: background 0.3s; border: none; cursor: pointer; font-size: 1em; }
         .btn:hover { background: #2980b9; }
         .btn-success { background: #27ae60; }
@@ -58,194 +59,259 @@
     <!-- 1. INSTRUCTIONS -->
     <div class="card">
         <h2>📌 How to use this portal</h2>
-        <p>This HTML page is your <strong>Review Form</strong> and <strong>Testing Guide</strong>. You will use this page to grade the models while you actually test them on the <strong>Live Vercel Dashboard</strong>.</p>
+        <p>This HTML page is your <strong>Review Form</strong> and <strong>Testing Guide</strong>. Use it to grade all 10 analytics and ML models while you test them on the Live Dashboard.</p>
         
         <p><strong>Step 1:</strong> Open the Live Dashboard: <a href="/" target="_blank" style="color: #3498db; font-weight: bold;">Click here to open the Main Dashboard</a></p>
         <p><strong>Step 2:</strong> Follow the test guides below for each module on the Main Dashboard.</p>
-        <p><strong>Step 3:</strong> Provide your feedback in the text boxes on this page.</p>
-        <p><strong>Step 4:</strong> Click "Email Report" at the bottom to send the final grade to the student.</p>
+        <p><strong>Step 3:</strong> Click "Email Report" at the bottom to send the final grade to the student.</p>
     </div>
 
-    <!-- 2. UI DASHBOARD EVALUATION -->
+    <!-- 2. DATA ANALYTICS DASHBOARDS -->
     <div class="card">
-        <h2>1. Comprehensive UI & Model Evaluation</h2>
+        <h2>Part A: Data Analytics Dashboards (3 Modules)</h2>
 
-        <!-- SECTION 1: Enter Cow Vitals -->
+        <!-- Module 1 -->
         <div class="ui-section">
-            <h3>📝 1. Enter the Cow's Vitals (Data Input)</h3>
-            
+            <h3>📊 1. IoT Herd Monitoring Dashboard</h3>
             <div class="explanation-box">
-                <h4>What We Did:</h4>
-                <p>We built a centralized state manager in the React dashboard that holds a specific cow's physical and environmental parameters. This single source of truth feeds into all our downstream machine learning models.</p>
+                <p>Aggregates high-frequency IoT sensor data from the MmCows dataset to visualize herd movement and rumination hours.</p>
             </div>
-            
+            <div class="feedback-controls">
+                <div class="radio-group">
+                    Decision: 
+                    <label><input type="radio" name="dec_iot" value="Keep" checked> Keep</label>
+                    <label><input type="radio" name="dec_iot" value="Needs Improvement"> Needs Improvement</label>
+                </div>
+                <textarea class="feedback-box" id="fb_iot" placeholder="Feedback on IoT Dashboard..."></textarea>
+            </div>
+        </div>
+
+        <!-- Module 2 -->
+        <div class="ui-section">
+            <h3>📈 2. Dry Period Optimization (Past Performance)</h3>
+            <div class="explanation-box">
+                <p>Scatter plots mapping sire genetics and historical lactation data to prove the 45-60 day resting "sweet spot" for maximum yield.</p>
+            </div>
+            <div class="feedback-controls">
+                <div class="radio-group">
+                    Decision: 
+                    <label><input type="radio" name="dec_dry" value="Keep" checked> Keep</label>
+                    <label><input type="radio" name="dec_dry" value="Needs Improvement"> Needs Improvement</label>
+                </div>
+                <textarea class="feedback-box" id="fb_dry" placeholder="Feedback on Dry Period Optimization..."></textarea>
+            </div>
+        </div>
+
+        <!-- Module 3 -->
+        <div class="ui-section">
+            <h3>🌍 3. Global Epidemiology Patterns</h3>
+            <div class="explanation-box">
+                <p>Pre-computed global datasets displaying Radar charts and heatmaps linking 29 bovine diseases to climate zones and feed types.</p>
+            </div>
+            <div class="feedback-controls">
+                <div class="radio-group">
+                    Decision: 
+                    <label><input type="radio" name="dec_epi" value="Keep" checked> Keep</label>
+                    <label><input type="radio" name="dec_epi" value="Needs Improvement"> Needs Improvement</label>
+                </div>
+                <textarea class="feedback-box" id="fb_epi" placeholder="Feedback on Global Epidemiology..."></textarea>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. PREDICTIVE ML MODELS -->
+    <div class="card">
+        <h2>Part B: Predictive AI Engines (7 Models)</h2>
+
+        <!-- Module 4 -->
+        <div class="ui-section">
+            <h3>📝 4. Global Input: Enter Cow Vitals</h3>
+            <div class="explanation-box">
+                <p>Centralized state manager taking environmental and physical parameters to feed the downstream AI models.</p>
+            </div>
             <div class="feedback-controls">
                 <div class="radio-group">
                     Decision: 
                     <label><input type="radio" name="dec_vitals" value="Keep" checked> Keep</label>
-                    <label><input type="radio" name="dec_vitals" value="Remove"> Remove</label>
                     <label><input type="radio" name="dec_vitals" value="Needs Improvement"> Needs Improvement</label>
                 </div>
-                <textarea class="feedback-box" id="fb_vitals" placeholder="Faculty Input: Feedback on the vitals input section..."></textarea>
+                <textarea class="feedback-box" id="fb_vitals" placeholder="Feedback on Vitals Input..."></textarea>
             </div>
         </div>
 
-        <!-- SECTION 2: Live ML Inference Station -->
+        <!-- Module 5 -->
         <div class="ui-section">
-            <h3>🤖 2. Live ML Inference Station (Dual XGBoost Engine)</h3>
-            
+            <h3>🩺 5. Mastitis Early Warning (Sensor Data)</h3>
             <div class="explanation-box">
-                <h4>What We Did:</h4>
-                <p>We built a complex dual-inference XGBoost backend engine. It takes live vitals from the user and simultaneously predicts the probability of disease AND calculates the resulting negative impact on milk yield in real-time.</p>
+                <p>XGBoost model that catches sub-clinical mastitis by analyzing ADC expansion (udder swelling) combined with core temperature.</p>
             </div>
-            
-            <div class="guide-box">
-                <h4>How to Test (On the Main Dashboard):</h4>
-                <ol>
-                    <li>Ensure you have entered the Cow's Vitals in the first section.</li>
-                    <li>Click <strong>"Run Dual AI Diagnosis"</strong>.</li>
-                    <li>Observe the two output gauges: Health Risk % and Yield Drop (Liters).</li>
-                </ol>
-            </div>
-
-            <div class="feedback-controls">
-                <div class="radio-group">
-                    Decision: 
-                    <label><input type="radio" name="dec_dual" value="Keep" checked> Keep</label>
-                    <label><input type="radio" name="dec_dual" value="Remove"> Remove</label>
-                    <label><input type="radio" name="dec_dual" value="Needs Improvement"> Needs Improvement</label>
-                </div>
-                <textarea class="feedback-box" id="fb_dual" placeholder="Faculty Input: Feedback on the Dual Engine..."></textarea>
-            </div>
-        </div>
-
-        <!-- SECTION 3: What-If Disease Impact Simulator -->
-        <div class="ui-section">
-            <h3>🔬 3. What-If Disease Impact Simulator</h3>
-            
-            <div class="explanation-box">
-                <h4>What We Did:</h4>
-                <p>We trained an isolated XGBoost model to simulate how specific diseases (Mastitis, Ketosis, Foot and Mouth) statistically cripple milk production compared to a healthy baseline. It runs "what-if" counterfactuals on the cow's current vitals.</p>
-            </div>
-            
-            <div class="guide-box">
-                <h4>How to Test (On the Main Dashboard):</h4>
-                <ol>
-                    <li>Select a disease from the dropdown (e.g., Mastitis).</li>
-                    <li>Click <strong>"Simulate Impact"</strong>.</li>
-                    <li>Review the projected Liters lost per day compared to the healthy baseline.</li>
-                </ol>
-            </div>
-
-            <div class="feedback-controls">
-                <div class="radio-group">
-                    Decision: 
-                    <label><input type="radio" name="dec_whatif" value="Keep" checked> Keep</label>
-                    <label><input type="radio" name="dec_whatif" value="Remove"> Remove</label>
-                    <label><input type="radio" name="dec_whatif" value="Needs Improvement"> Needs Improvement</label>
-                </div>
-                <textarea class="feedback-box" id="fb_whatif" placeholder="Faculty Input: Feedback on the What-If Simulator..."></textarea>
-            </div>
-        </div>
-
-        <!-- SECTION 4: Milk Yield Forecaster -->
-        <div class="ui-section">
-            <h3>📈 4. How much milk will she produce? (Yield Forecaster)</h3>
-            
-            <div class="explanation-box">
-                <h4>What We Did:</h4>
-                <p>We trained an XGBoost regression model on historical parity data. It forecasts a cow's absolute peak yield and total 305-day lactation volume based entirely on her previous historical cycles and rest periods.</p>
-            </div>
-            
-            <div class="feedback-controls">
-                <div class="radio-group">
-                    Decision: 
-                    <label><input type="radio" name="dec_yield" value="Keep" checked> Keep</label>
-                    <label><input type="radio" name="dec_yield" value="Remove"> Remove</label>
-                    <label><input type="radio" name="dec_yield" value="Needs Improvement"> Needs Improvement</label>
-                </div>
-                <textarea class="feedback-box" id="fb_yield" placeholder="Faculty Input: Feedback on the Yield Forecaster..."></textarea>
-            </div>
-        </div>
-
-        <!-- SECTION 5: Milk Quality Predictor -->
-        <div class="ui-section">
-            <h3>🥛 5. How rich will the milk be? (Quality Predictor)</h3>
-            
-            <div class="explanation-box">
-                <h4>What We Did:</h4>
-                <p>We built a Random Forest classifier that predicts the nutritional grade (Low, Medium, High Quality) of the milk based on the cow's diet (Feed Quantity/Frequency) and environmental factors (Temperature/Humidity).</p>
-            </div>
-            
-            <div class="feedback-controls">
-                <div class="radio-group">
-                    Decision: 
-                    <label><input type="radio" name="dec_quality" value="Keep" checked> Keep</label>
-                    <label><input type="radio" name="dec_quality" value="Remove"> Remove</label>
-                    <label><input type="radio" name="dec_quality" value="Needs Improvement"> Needs Improvement</label>
-                </div>
-                <textarea class="feedback-box" id="fb_quality" placeholder="Faculty Input: Feedback on the Milk Quality model..."></textarea>
-            </div>
-        </div>
-
-        <!-- SECTION 6: Visual Yield Predictor (CNN) -->
-        <div class="ui-section">
-            <h3>👁️ 6. Visual Yield Predictor (CNN Deep Learning)</h3>
-            
-            <div class="alert-box">
-                <h4>⚠️ Important Testing Instructions</h4>
-                <p>Do NOT upload images on this HTML page. You must go to the Main React Dashboard to use the upload button.</p>
-            </div>
-
-            <div class="explanation-box">
-                <h4>What We Did:</h4>
-                <p>We developed a Convolutional Neural Network (CNN) using Keras/TensorFlow. The model extracts morphological features (vein structure, depth, attachment) strictly from <em>rear udder images</em> to visually regress and estimate milk yield capacity.</p>
-            </div>
-            
-            <div class="guide-box">
-                <h4>How to Test (On the Main Dashboard):</h4>
-                <ol>
-                    <li>Download the <a href="https://drive.google.com/drive/folders/1PVXHlU4DGq52XoBWJ1RvmObmQtVJmTgG?usp=drive_link" target="_blank" style="color: #e67e22; font-weight: bold;">Test Images from Google Drive</a>.</li>
-                    <li>Go to the Visual Predictor tab on the <strong>Main Vercel Dashboard</strong>.</li>
-                    <li>Upload one of the downloaded "Rear Udder" images.</li>
-                    <li>The CNN will process the image array and return a Yield Estimate in kg.</li>
-                </ol>
-            </div>
-
-            <div class="feedback-controls">
-                <div class="radio-group">
-                    Decision: 
-                    <label><input type="radio" name="dec_vision" value="Keep" checked> Keep</label>
-                    <label><input type="radio" name="dec_vision" value="Remove"> Remove</label>
-                    <label><input type="radio" name="dec_vision" value="Needs Improvement"> Needs Improvement</label>
-                </div>
-                <textarea class="feedback-box" id="fb_vision" placeholder="Faculty Input: Feedback on the CNN Visual Predictor..."></textarea>
-            </div>
-        </div>
-
-        <!-- SECTION 7: Mastitis Early Warning -->
-        <div class="ui-section">
-            <h3>🩺 7. Mastitis Early Warning (Sensor Data)</h3>
-            
-            <div class="explanation-box">
-                <h4>What We Did:</h4>
-                <p>This model detects sub-clinical mastitis by analyzing IoT flex sensors that measure minute udder swelling (ADC expansion ratios) paired with core temperature.</p>
-            </div>
-
             <div class="feedback-controls">
                 <div class="radio-group">
                     Decision: 
                     <label><input type="radio" name="dec_mastitis" value="Keep" checked> Keep</label>
-                    <label><input type="radio" name="dec_mastitis" value="Remove"> Remove</label>
                     <label><input type="radio" name="dec_mastitis" value="Needs Improvement"> Needs Improvement</label>
                 </div>
-                <textarea class="feedback-box" id="fb_mastitis" placeholder="Faculty Input: Feedback on the Mastitis sensor model..."></textarea>
+                <textarea class="feedback-box" id="fb_mastitis" placeholder="Feedback on Mastitis Sensor..."></textarea>
             </div>
         </div>
 
+        <!-- Module 6 -->
+        <div class="ui-section">
+            <h3>🤖 6. Cattle Health Risk Engine</h3>
+            <div class="explanation-box">
+                <p>XGBoost classifier that takes live vitals and outputs the exact percentage risk of the cow currently harboring a disease.</p>
+            </div>
+            <div class="feedback-controls">
+                <div class="radio-group">
+                    Decision: 
+                    <label><input type="radio" name="dec_risk" value="Keep" checked> Keep</label>
+                    <label><input type="radio" name="dec_risk" value="Needs Improvement"> Needs Improvement</label>
+                </div>
+                <textarea class="feedback-box" id="fb_risk" placeholder="Feedback on Health Risk Engine..."></textarea>
+            </div>
+        </div>
+
+        <!-- Module 7 -->
+        <div class="ui-section">
+            <h3>🔬 7. Yield Impact Simulator (What-If Analysis)</h3>
+            <div class="explanation-box">
+                <p>XGBoost Regressor simulating counterfactuals: exactly how many liters of milk are lost today due to the current disease stress.</p>
+            </div>
+            <div class="feedback-controls">
+                <div class="radio-group">
+                    Decision: 
+                    <label><input type="radio" name="dec_whatif" value="Keep" checked> Keep</label>
+                    <label><input type="radio" name="dec_whatif" value="Needs Improvement"> Needs Improvement</label>
+                </div>
+                <textarea class="feedback-box" id="fb_whatif" placeholder="Feedback on What-If Simulator..."></textarea>
+            </div>
+        </div>
+
+        <!-- Module 8 -->
+        <div class="ui-section">
+            <h3>📈 8. Next-Cycle Yield Forecaster</h3>
+            <div class="explanation-box">
+                <p>XGBoost Regressor projecting the absolute peak yield (kg/day) for the cow's next 305-day cycle based on historical parity and rest.</p>
+            </div>
+            <div class="feedback-controls">
+                <div class="radio-group">
+                    Decision: 
+                    <label><input type="radio" name="dec_yield" value="Keep" checked> Keep</label>
+                    <label><input type="radio" name="dec_yield" value="Needs Improvement"> Needs Improvement</label>
+                </div>
+                <textarea class="feedback-box" id="fb_yield" placeholder="Feedback on Yield Forecaster..."></textarea>
+            </div>
+        </div>
+
+        <!-- Module 9 -->
+        <div class="ui-section">
+            <h3>🥛 9. Milk Quality Predictor</h3>
+            <div class="explanation-box">
+                <p>Random Forest classifier forecasting the nutritional grade (High/Med/Low) based on feed quantity and ambient temperature.</p>
+            </div>
+            <div class="feedback-controls">
+                <div class="radio-group">
+                    Decision: 
+                    <label><input type="radio" name="dec_quality" value="Keep" checked> Keep</label>
+                    <label><input type="radio" name="dec_quality" value="Needs Improvement"> Needs Improvement</label>
+                </div>
+                <textarea class="feedback-box" id="fb_quality" placeholder="Feedback on Quality Predictor..."></textarea>
+            </div>
+        </div>
+
+        <!-- Module 10 -->
+        <div class="ui-section">
+            <h3>👁️ 10. Visual Yield Predictor (CNN Deep Learning)</h3>
+            <div class="alert-box">
+                <p>⚠️ Test this model by uploading an udder image on the MAIN Dashboard, not here.</p>
+            </div>
+            <div class="explanation-box">
+                <p>Convolutional Neural Network (TensorFlow/Keras) extracting vein morphology from rear udder images to regress milk volume.</p>
+            </div>
+            <div class="feedback-controls">
+                <div class="radio-group">
+                    Decision: 
+                    <label><input type="radio" name="dec_vision" value="Keep" checked> Keep</label>
+                    <label><input type="radio" name="dec_vision" value="Needs Improvement"> Needs Improvement</label>
+                </div>
+                <textarea class="feedback-box" id="fb_vision" placeholder="Feedback on CNN Visual Predictor..."></textarea>
+            </div>
+        </div>
+
+        <!-- Module 11 -->
+        <div class="ui-section">
+            <h3>⚕️ 11. Cow Symptom Checker</h3>
+            <div class="explanation-box">
+                <p>Multi-class Scikit-Learn engine mapping user-checked physical symptoms to a differential diagnosis.</p>
+            </div>
+            <div class="feedback-controls">
+                <div class="radio-group">
+                    Decision: 
+                    <label><input type="radio" name="dec_symptom" value="Keep" checked> Keep</label>
+                    <label><input type="radio" name="dec_symptom" value="Needs Improvement"> Needs Improvement</label>
+                </div>
+                <textarea class="feedback-box" id="fb_symptom" placeholder="Feedback on Symptom Checker..."></textarea>
+            </div>
+        </div>
     </div>
 
-    <!-- 3. GENERATE REPORT -->
+    <!-- 4. FUTURE RESEARCH PROPOSALS -->
+    <div class="card">
+        <h2>Part C: Future Development & Research Proposals</h2>
+        <p>Select which AI extensions you approve for future academic development (based on our existing datasets):</p>
+        
+        <div class="proposal-item">
+            <input type="checkbox" id="prop1" value="Climate-Shift Disease Forecaster">
+            <div>
+                <strong>1. Climate-Shift Disease Forecaster</strong>
+                <p>Utilize the <i>Global Epidemiology</i> dataset to predict how shifting climate zones will alter bovine disease distribution globally over the next 10 years.</p>
+            </div>
+        </div>
+        
+        <div class="proposal-item">
+            <input type="checkbox" id="prop2" value="Mastitis Severity Progression Timeline">
+            <div>
+                <strong>2. Mastitis Severity Progression Timeline</strong>
+                <p>Analyze time-series deviations in the <i>clinical_mastitis_cows</i> sensor data to predict exactly how many days a cow has before sub-clinical mastitis becomes severe.</p>
+            </div>
+        </div>
+
+        <div class="proposal-item">
+            <input type="checkbox" id="prop3" value="Lameness Early Detection System">
+            <div>
+                <strong>3. Lameness Early Detection System</strong>
+                <p>Leverage <i>MmCows</i> daily features (walking distance, resting hours anomalies) to classify and catch hoof/lameness issues days before physical limping occurs.</p>
+            </div>
+        </div>
+
+        <div class="proposal-item">
+            <input type="checkbox" id="prop4" value="Feed-to-Yield Financial Optimizer">
+            <div>
+                <strong>4. Feed-to-Yield Financial Optimizer</strong>
+                <p>Correlate feed type costs against the XGBoost projected yield bumps to maximize farm profit margins dynamically.</p>
+            </div>
+        </div>
+
+        <div class="proposal-item">
+            <input type="checkbox" id="prop5" value="Genomic Trait Predictor">
+            <div>
+                <strong>5. Genomic Trait Predictor</strong>
+                <p>Map historical sire genetics to lifetime calf survival and overall lactation persistency using a deep learning survival analysis model.</p>
+            </div>
+        </div>
+
+        <div class="proposal-item">
+            <input type="checkbox" id="prop6" value="Computer Vision Disease Triage">
+            <div>
+                <strong>6. Computer Vision Disease Triage</strong>
+                <p>Expand the Keras CNN to visually classify external physical symptoms like hoof lesions, lumpy skin disease, and eye infections from standard camera feeds.</p>
+            </div>
+        </div>
+
+        <textarea class="feedback-box" id="fb_future" placeholder="Faculty Input: Suggest any other new models or analytical requirements..."></textarea>
+    </div>
+
+    <!-- 5. GENERATE REPORT -->
     <div class="card" style="text-align: center; background: #e8f4fd; border-top: 4px solid #3498db;">
         <h2>Submit Faculty Feedback</h2>
         <p>Click "Compile Review Report" to view the final text, and then click "Email Report" to automatically open your email app with the feedback attached!</p>
@@ -280,7 +346,6 @@
             }
             const subject = encodeURIComponent("Faculty Review: Dairy Precision AI");
             const body = encodeURIComponent(currentReportText);
-            
             window.location.href = `mailto:siddaling4621@gmail.com?subject=${subject}&body=${body}`;
         }
 
@@ -301,13 +366,17 @@
                 report += `=======================================\n\n`;
                 
                 const sections = [
-                    { title: '1. Cow Vitals Input', radio: 'dec_vitals', text: 'fb_vitals' },
-                    { title: '2. Live ML Inference (Dual Engine)', radio: 'dec_dual', text: 'fb_dual' },
-                    { title: '3. What-If Disease Impact', radio: 'dec_whatif', text: 'fb_whatif' },
-                    { title: '4. Yield Forecaster', radio: 'dec_yield', text: 'fb_yield' },
-                    { title: '5. Milk Quality Predictor', radio: 'dec_quality', text: 'fb_quality' },
-                    { title: '6. CNN Visual Predictor', radio: 'dec_vision', text: 'fb_vision' },
-                    { title: '7. Mastitis Early Warning', radio: 'dec_mastitis', text: 'fb_mastitis' }
+                    { title: '1. IoT Herd Dashboard', radio: 'dec_iot', text: 'fb_iot' },
+                    { title: '2. Dry Period Optimization', radio: 'dec_dry', text: 'fb_dry' },
+                    { title: '3. Global Epidemiology', radio: 'dec_epi', text: 'fb_epi' },
+                    { title: '4. Cow Vitals Input', radio: 'dec_vitals', text: 'fb_vitals' },
+                    { title: '5. Mastitis Sensor Early Warning', radio: 'dec_mastitis', text: 'fb_mastitis' },
+                    { title: '6. Cattle Health Risk Engine', radio: 'dec_risk', text: 'fb_risk' },
+                    { title: '7. Yield Impact Simulator', radio: 'dec_whatif', text: 'fb_whatif' },
+                    { title: '8. Next-Cycle Forecaster', radio: 'dec_yield', text: 'fb_yield' },
+                    { title: '9. Milk Quality Predictor', radio: 'dec_quality', text: 'fb_quality' },
+                    { title: '10. CNN Visual Predictor', radio: 'dec_vision', text: 'fb_vision' },
+                    { title: '11. Symptom Checker', radio: 'dec_symptom', text: 'fb_symptom' }
                 ];
 
                 sections.forEach(s => {
@@ -319,6 +388,24 @@
                     report += `\n`;
                 });
                 
+                report += `[FUTURE RESEARCH PROPOSALS]\n`;
+                let proposals = [];
+                for(let i=1; i<=6; i++) {
+                    const p = document.getElementById('prop'+i);
+                    if(p && p.checked) proposals.push(p.value);
+                }
+                
+                if(proposals.length > 0) {
+                    proposals.forEach(p => report += `- ${p}\n`);
+                } else {
+                    report += `No specific future proposals selected.\n`;
+                }
+
+                report += `\n[ADDITIONAL SUGGESTIONS]\n`;
+                const futureNode = document.getElementById('fb_future');
+                report += (futureNode && futureNode.value) ? futureNode.value : 'No additional suggestions provided.';
+                report += `\n\n`;
+
                 report += `=======================================\n`;
                 report += `End of Report\n`;
 
