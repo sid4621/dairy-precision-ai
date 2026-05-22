@@ -542,8 +542,8 @@ def _load_smart_models():
     global _disease_model, _yield_model, _disease_features, _yield_features
     if _disease_model is None or _yield_model is None:
         import dill
-        d_path = r"models\disease_model.pkl"
-        y_path = r"models\milk_yield_model.pkl"
+        d_path = r"models/disease_model.pkl"
+        y_path = r"models/milk_yield_model.pkl"
         with open(d_path, 'rb') as f:
             d = dill.load(f)
             _disease_model = d['model']
@@ -718,7 +718,7 @@ async def predict_yield(data: YieldInput):
     
     if yield_model_cache is None:
         import dill
-        path = r"models\milk_yield_model.pkl"
+        path = r"models/milk_yield_model.pkl"
         if not os.path.exists(path):
             raise HTTPException(status_code=404, detail="Yield model not found.")
         with open(path, 'rb') as f:
